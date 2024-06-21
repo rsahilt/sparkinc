@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spark Inc - We Measure What Matters</title>
 
+    <!-- slide in animation js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+
     <div class="utility-bar">
 
         <div class="inner-utility-bar">
@@ -84,5 +93,31 @@
             </div>
         </nav>
     </header>
+
+    <section>
+    
+            <div class="homepage-content">
+                <div class="text-box" data-aos="fade-right" data-aos-duration="2000">
+                    <h1>Listen to Your Heart:  <br> The Crucial Role of ECG Checks</h1>
+                    <p><sup>" </sup>Your heart beats tirelessly, and ECG checks offer a way to tune into its rhythm, ensuring it stays strong and healthy. Regular checks are a proactive step towards a healthier heart and a longer, happier life.<sup> "</sup></p>
+                    <p>
+                        <button class="btn btn-primary learnmore">LEARN MORE</button>
+                    </p>
+                </div>
+                <!-- <div class="image-box">
+                    <img src="{{asset('images/doctor.png')}}" alt="doctor" width="100%" height="auto">
+                </div> -->
+            </div>
+
+        
+    </section>
+
+
+     <!-- js for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
 </body>
 </html>
