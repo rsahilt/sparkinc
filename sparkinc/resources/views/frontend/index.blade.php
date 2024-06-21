@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spark Inc - We Measure What Matters</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
     <!-- slide in animation js -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -104,13 +109,47 @@
                         <button class="btn btn-primary learnmore">LEARN MORE</button>
                     </p>
                 </div>
-                <!-- <div class="image-box">
-                    <img src="{{asset('images/doctor.png')}}" alt="doctor" width="100%" height="auto">
-                </div> -->
+
+                <div class="image-box" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="" alt="image" width="100%" height="auto">
+                </div>
             </div>
 
-        
+            <div class="cards-homepage">
+                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="card-body">
+                        <p class="card-icon icon1"><i class="fas fa-user-md"></i></p>
+                        <h5 class="card-title">Qualified Doctors</h5>
+                        <p class="card-text">
+                        Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.  </p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="card-body">
+                        <p class="card-icon icon2"><i class="fas fa-users"></i></p>
+                        <h5 class="card-title">Professional Staffs</h5>
+                        <p class="card-text">
+                        Our professional medical staff is highly skilled and experienced in providing top-notch healthcare services. Their dedication and expertise ensure that you receive the best possible care.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+                    <div class="card-body">
+                        <p class="card-icon icon3"><i class="fas fa-chalkboard-teacher"></i></p>
+                        <h5 class="card-title">Training Sessions</h5>
+                        <p class="card-text">
+                        Our professional medical staff regularly participates in advanced training sessions to stay updated with the latest medical advancements. This continuous education ensures they provide the highest quality care to our patients.</p>
+                    </div>
+                </div>
+            </div>
+
     </section>
+
+    
+
+
+    
 
 
      <!-- js for animation -->
