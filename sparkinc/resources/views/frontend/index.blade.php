@@ -53,7 +53,7 @@
     <header>
         <div class="inner-header">
             <div class="logo">
-                <img src="{{asset('images/logo.png')}}" alt="Spark Inc Logo" class="imagelogo">
+                <img src="{{asset('images/spark.png')}}" alt="Spark Inc Logo" class="imagelogo">
             </div>
 
             <!-- Navigation Bar -->
@@ -149,7 +149,7 @@
             <div class="home-about">
                 <div class="description-container" data-aos="fade-up" data-aos-duration="2000">
                     <p>About Us</p>
-                    <h1>We Mesaure What Matters</h1>
+                    <h1>We Measure What Matters</h1>
                     <p>Our commitment to cutting-edge technology and patient care is stronger than ever with the introduction of the Spandan ECG Kit. This innovative device allows us to provide faster, more accurate ECG readings, ensuring prompt diagnosis and treatment for patients.</p>
                     <br>
                     <p>
@@ -168,6 +168,22 @@
                     </div>
                 </a>        
                 <p>Spandan - A Portable ECG Kit</p>
+            </div>
+
+
+            <div class="home-blog">
+            <div class="description-container" data-aos="fade-up" data-aos-duration="2000">
+                    <p>Blog Posts</p>
+                    <h1>Our Latest Blog Posts</h1>
+                    <p>Your comprehensive guide to health and wellness, featuring expert insights, the latest medical advancements, and practical tips for living a healthier life.</p>
+                    <br>
+                    <p>
+                        <button class=" btn btn-primary about-btn">All Blog Posts</button>
+                    </p>
+                </div>
+                <div class="image-container" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="{{asset('images/blog-thumbnail.jpg')}}" alt="image" width="80%" height="80%">
+                </div>
             </div>
 
     </section>

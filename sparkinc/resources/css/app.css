@@ -55,7 +55,10 @@ header{
     display: flex;
     height: 120px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    z-index: 1;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 .inner-header{
@@ -333,4 +336,20 @@ section{
 
 .circle:hover{
     background-color: rgb(228, 14, 14);
+}
+
+
+/* /////////////////////// home blog section //////////////// */
+
+.home-blog{
+    margin: 10% auto;
+    padding: 0;
+    width: 88%;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image-container img{
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
 }
