@@ -51,52 +51,54 @@
     </div>
 
     <header>
-        <div class="logo">
-            <img src="{{asset('images/logo.png')}}" alt="Spark Inc Logo" class="imagelogo">
-        </div>
-
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="navbar-content">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#">ABOUT</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">CONTACT</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">PRODUCTS</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">BLOG</a>
-                        </li>
-                    </ul>
-
-                    <form class="d-flex ms-4">
-                        @csrf
-                        <input class="search-box" type="search" placeholder="Search our products" aria-label="Search">
-                        
-                        <button class="btn btn-outline-success search-btn" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </form>
-                    
-                </div>
+        <div class="inner-header">
+            <div class="logo">
+                <img src="{{asset('images/logo.png')}}" alt="Spark Inc Logo" class="imagelogo">
             </div>
-        </nav>
+
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-content">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"  href="#">ABOUT</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">PRODUCTS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">BLOG</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex ms-4">
+                            @csrf
+                            <input class="search-box" type="search" placeholder="Search our products" aria-label="Search">
+                            
+                            <button class="btn btn-outline-success search-btn" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section>
@@ -111,12 +113,12 @@
                 </div>
 
                 <div class="image-box" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="" alt="image" width="100%" height="auto">
+                    <img src="{{asset('images/heartbeat.jpg')}}" alt="image" width="100%" height="auto">
                 </div>
             </div>
 
-            <div class="cards-homepage">
-                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+            <div class="cards-homepage" data-aos="fade-right" data-aos-duration="2000">
+                <div class="card">
                     <div class="card-body">
                         <p class="card-icon icon1"><i class="fas fa-user-md"></i></p>
                         <h5 class="card-title">Qualified Doctors</h5>
@@ -125,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+                <div class="card">
                     <div class="card-body">
                         <p class="card-icon icon2"><i class="fas fa-users"></i></p>
                         <h5 class="card-title">Professional Staffs</h5>
@@ -134,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="card" data-aos="slide-up" data-aos-duration="2000">
+                <div class="card">
                     <div class="card-body">
                         <p class="card-icon icon3"><i class="fas fa-chalkboard-teacher"></i></p>
                         <h5 class="card-title">Training Sessions</h5>
@@ -142,6 +144,23 @@
                         Our professional medical staff regularly participates in advanced training sessions to stay updated with the latest medical advancements. This continuous education ensures they provide the highest quality care to our patients.</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="home-about">
+                <div class="description-container" data-aos="fade-up" data-aos-duration="2000">
+                    <p>About Us</p>
+                    <h1>We Mesaure What Matters</h1>
+                    <p>Our commitment to cutting-edge technology and patient care is stronger than ever with the introduction of the Spandan ECG Kit. This innovative device allows us to provide faster, more accurate ECG readings, ensuring prompt diagnosis and treatment for patients.</p>
+                    <br>
+                    <p>
+                        <button class=" btn btn-primary about-btn">More About Us</button>
+                    </p>
+                </div>
+                <div class="image-container"></div>
+            </div>
+
+            <div class="video-container">
+                
             </div>
 
     </section>
