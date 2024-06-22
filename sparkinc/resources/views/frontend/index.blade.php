@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="image-box" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="{{asset('images/heartbeat.jpg')}}" alt="image" width="100%" height="auto">
+                    <!-- <img src="{{asset('images/hero-img.jpg')}}" width="70%" height="100%" alt="hero image"> -->
                 </div>
             </div>
 
@@ -156,11 +156,18 @@
                         <button class=" btn btn-primary about-btn">More About Us</button>
                     </p>
                 </div>
-                <div class="image-container"></div>
+                <div class="image-container" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="{{asset('images/heartbeat.jpg')}}" alt="image" width="80%" height="80%">
+                </div>
             </div>
 
             <div class="video-container">
-                
+                <a href="https://www.youtube.com/watch?v=bjQ0E311Nyk&ab_channel=SparkInc" target="_blank">
+                    <div class="circle">
+                        <i class="fa fa-play"></i>
+                    </div>
+                </a>        
+                <p>Spandan - A Portable ECG Kit</p>
             </div>
 
     </section>
