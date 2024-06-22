@@ -186,6 +186,83 @@
                 </div>
             </div>
 
+            <div class="cards-homepage testimonials">
+                
+                <div class="card-container testimonials-container">
+                    <div class="testimonial-text-container">
+                        <p>Testimonials</p>
+                        <h1>Invaluable Feedbacks</h1>
+                    </div>
+                    <div class="testimonial-card-container" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="card">
+                            <div class="card-body testimonial-card-body">
+                                <p class="card-text testimonial-text">
+                                    Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                                    <div class="client-detail">
+                                        <div class="client-dp"></div>
+                                        <div class="client-name">
+                                            <p>Firstname Lastname</p>
+                                            <p>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body testimonial-card-body">
+                                <p class="card-text testimonial-text">
+                                    Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                                    <div class="client-detail">
+                                        <div class="client-dp">
+
+                                        </div>
+                                        <div class="client-name">
+                                            <p>Firstname Lastname</p>
+                                            <p>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body testimonial-card-body">
+                                <p class="card-text testimonial-text">
+                                    Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                                    <div class="client-detail">
+                                        <div class="client-dp"></div>
+                                        <div class="client-name">
+                                            <p>Firstname Lastname</p>
+                                            <p>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                       
+
+                        
+                    </div>
+                </div>
+            </div>
+
     </section>
 
     
