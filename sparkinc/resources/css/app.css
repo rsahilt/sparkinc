@@ -1,6 +1,11 @@
 /* Import Bootstrap CSS */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+/* ///////////////////// body ///////////////////////*/
+body{
+    scroll-behavior: smooth;
+}
+
 /* ///////////////////// utlity bar ////////////////////////*/
 .utility-bar{
     /* background: linear-gradient(#d386cd, #e0aadc); */
