@@ -13,7 +13,7 @@
         </div>
 
         <div class="image-box" data-aos="fade-left" data-aos-duration="2000">
-            <!-- <img src="{{asset('images/hero-img.jpg')}}" width="70%" height="100%" alt="hero image"> -->
+            <img src="{{asset('images/kit.png')}}" alt="hero image">
         </div>
     </div>
 
