@@ -511,3 +511,33 @@ footer{
     color: #666666;
     font-weight: 200;
 }
+
+
+/* ////////////////////////// about us page /////////////////////// */
+
+.about-contents{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    border-radius: 0 0 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url('/public/images/about.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.about-contents h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-contents p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

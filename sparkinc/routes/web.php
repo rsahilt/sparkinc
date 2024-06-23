@@ -7,6 +7,10 @@ use App\Http\Controllers\FrontendController;
 Route::get('/', [FrontendController::class, 'index'])
     ->name('homepage');
 
+// route for about page
+Route::get('/about', [FrontendController::class, 'about'])
+    ->name('aboutpage');
+
 
 
 

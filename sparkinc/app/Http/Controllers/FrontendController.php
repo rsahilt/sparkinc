@@ -11,4 +11,9 @@ class FrontendController extends Controller
         $title = "Spark Inc";
         return view('frontend.index', compact('title'));
     }
+
+    public function about(){
+        $title = "About Us";
+        return view('frontend.about', compact('title'));
+    }
 }
