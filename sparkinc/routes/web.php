@@ -11,6 +11,10 @@ Route::get('/', [FrontendController::class, 'index'])
 Route::get('/about', [FrontendController::class, 'about'])
     ->name('aboutpage');
 
+//route for contact page
+Route::get('/contact', [FrontendController::class, 'contact'])
+    ->name('contactpage');
+
 
 
 

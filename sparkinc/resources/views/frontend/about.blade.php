@@ -2,9 +2,9 @@
 
 
 @section('content')
-    <div class="about-banner">
-        <h1>About Us</h1>
-        <p>Spark / About Us</p>
+    <div class="banner about-banner">
+        <h1>{{ $title }}</h1>
+        <p>Spark Inc / {{ $title }}</p>
     </div>
 
     <div class="about-text">
