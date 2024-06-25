@@ -183,7 +183,8 @@ section{
 }
 
 .learnmore:hover,
-.about-btn:hover{
+.about-btn:hover,
+.cart-btn:hover{
     background-position: left;
 }
 
@@ -604,7 +605,7 @@ footer{
 }
 
 /* Individual doctor's card */
-.doc-cards {
+.doc-cards{
     position: relative;
     width: 380px;
     height: 350px;
@@ -615,7 +616,7 @@ footer{
     transition: transform 0.3s ease; 
 }
 
-.doc-cards:hover {
+.doc-cards:hover{
     transform: scale(1.05); 
 }
 
@@ -785,3 +786,101 @@ body {
     text-align: center;
     font-weight: 500;
 }
+
+/* /////////////////////////// PRODUCTS PAGE /////////////////////////// */
+
+.product-banner{
+    background: url('/public/images/products-banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+article{
+    margin:7% auto 4% auto;
+    width: 70%;
+    text-align: center;
+    font-size: 1.3em;
+    color: #515151;
+    font-weight: 200;
+}
+
+.products-container{
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod-cards{
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height: 450px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.prod-cards:hover{
+    transform: scale(1.05); 
+}
+
+.prod-image{
+    height: 300px;
+    border-radius: 7px 7px 0 0;
+}
+
+.prod-cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0 0;
+    object-fit: cover;
+}
+
+.prod-details{
+    height: 150px;
+}
+
+.prod-details h1{
+    font-size: 1.5em;
+    padding:10px 0 0 20px;
+}
+
+.prod-details p:first-of-type{
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.prod-details p:last-of-type{
+    text-align: center;
+}
+
+.prod-details p:last-child button{
+    padding: 4px 20px;
+    font-size: 0.9em;
+    letter-spacing: 0;
+    word-spacing: 2px;
+}
+
+.cart-btn{
+    padding: 12px 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #d44fd2 50%, #af32bf 50% ) right;
+    background-size: 200%;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+
+

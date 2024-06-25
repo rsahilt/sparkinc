@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 
+//FRONTEND ROUTES 
+
 // route for the frontend landing page
 Route::get('/', [FrontendController::class, 'index'])
     ->name('homepage');
@@ -11,9 +13,13 @@ Route::get('/', [FrontendController::class, 'index'])
 Route::get('/about', [FrontendController::class, 'about'])
     ->name('aboutpage');
 
-//route for contact page
+// route for contact page
 Route::get('/contact', [FrontendController::class, 'contact'])
     ->name('contactpage');
+
+// route for products page
+Route::get('/products', [FrontendController::class, 'products'])
+    ->name('productpage');
 
 
 
