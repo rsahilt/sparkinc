@@ -832,6 +832,7 @@ article{
 .prod-image{
     height: 300px;
     border-radius: 7px 7px 0 0;
+    overflow: hidden;
 }
 
 .prod-cards img {
@@ -839,6 +840,12 @@ article{
     height: 100%;
     border-radius: 7px 7px 0 0;
     object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prod-image:hover img {
+    transform: scale(1.15);
 }
 
 .prod-details{
