@@ -41,8 +41,7 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                                        <span class="submitting"></span>
+                                        <input type="submit" value="Send Message" class="btn btn-primary learnmore rounded-0 py-2 px-4">
                                     </div>
                                 </div>
 
