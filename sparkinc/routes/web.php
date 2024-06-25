@@ -21,6 +21,12 @@ Route::get('/contact', [FrontendController::class, 'contact'])
 Route::get('/products', [FrontendController::class, 'products'])
     ->name('productpage');
 
+// route for blogs page
+Route::get('/blogs', [FrontendController::class, 'blogs'])
+    ->name('blogpage');
+
+
+
 
 
 

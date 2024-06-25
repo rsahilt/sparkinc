@@ -890,4 +890,10 @@ article{
     border: none;
 }
 
+/* ////////////////// Blog Page //////////////////// */
+
+.blog-banner{
+    background: url('/public/images/blog-banner.jpg') no-repeat center center;
+    background-size: cover;
+}
 
