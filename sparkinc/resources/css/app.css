@@ -92,7 +92,8 @@ header{
     padding: 0 10px;
 }
 
-.nav-link {
+.nav-link,
+.activenavlink {
     position: relative; /* Needed to position the pseudo-elements */
     font-family: "Lato", sans-serif;
     font-weight: 600;
@@ -103,38 +104,49 @@ header{
     overflow: hidden; /* To prevent background overflow */
 }
 
-.nav-link::after, .nav-link::before {
+.nav-link::after,
+.nav-link::before,
+.activenavlink::after,
+.activenavlink::before {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
-.nav-link::after {
+.nav-link::after,
+.activenavlink::after {
     top: 0;
     height: 3px; /* Border height */
     background: rgb(244, 127, 223); /* Border color */
     transform: scaleX(0);
 }
 
-.nav-link::before {
+.nav-link::before,
+.activenavlink::before {
     top: 0;
     height: 100%;
-    background: rgba(244, 127, 223, 0.2); /* Background color */
+    background: rgba(244, 127, 223, 0.2);
     transform: translateY(-100%);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.activenavlink::after {
     transform: scaleX(1);
 }
 
-.nav-link:hover::before {
+.nav-link:hover::before,
+.nav-link.activenavlink::before {
     transform: translateY(0%);
-    transition-delay: 0.4s; /* Delay the background animation */
+    transition-delay: 0.2s; /* Delay the background animation */
 }
 
-
+/* Keep font color the same on hover */
+.nav-link:hover,
+.nav-link.activenavlink {
+    color: #7e507b;
+}
 
 
 .navbar-content {

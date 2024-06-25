@@ -9,26 +9,31 @@ class FrontendController extends Controller
 {
     public function index(){
         $title = "Spark Inc";
-        return view('frontend.index', compact('title'));
+        $slug = "homepageslug";
+        return view('frontend.index', compact('title', 'slug'));
     }
 
     public function about(){
         $title = "About Us";
-        return view('frontend.about', compact('title'));
+        $slug = "aboutpageslug";
+        return view('frontend.about', compact('title', 'slug'));
     }
 
     public function contact(){
         $title = "Contact Us";
-        return view('frontend.contact', compact('title'));
+        $slug = "contactpageslug";
+        return view('frontend.contact', compact('title', 'slug'));
     }
 
     public function products(){
         $title = "Products";
-        return view('frontend.product', compact('title'));
+        $slug = "productpageslug";
+        return view('frontend.product', compact('title', 'slug'));
     }
 
     public function blogs(){
         $title = "Blogs";
-        return view('frontend.blog', compact('title'));
+        $slug = "blogpageslug";
+        return view('frontend.blog', compact('title', 'slug'));
     }
 }

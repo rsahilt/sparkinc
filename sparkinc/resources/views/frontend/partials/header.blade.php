@@ -42,23 +42,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">HOME</a>
+                            <a class="nav-link {{ $slug === 'homepageslug' ? 'activenavlink' : '' }}" href="/">HOME</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link"  href="/about">ABOUT</a>
+                            <a class="nav-link {{ $slug === 'aboutpageslug' ? 'activenavlink' : '' }}" href="/about">ABOUT</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">CONTACT</a>
+                            <a class="nav-link {{ $slug === 'contactpageslug' ? 'activenavlink' : '' }}" href="/contact">CONTACT</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/products">PRODUCTS</a>
+                            <a class="nav-link {{ $slug === 'productpageslug' ? 'activenavlink' : '' }}" href="/products">PRODUCTS</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/blogs">BLOG</a>
+                            <a class="nav-link {{ $slug === 'blogpageslug' ? 'activenavlink' : '' }}" href="/blogs">BLOGS</a>
                         </li>
                     </ul>
 
