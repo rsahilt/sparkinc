@@ -47,45 +47,52 @@
         </div>
     </div>
 
-    <div class="blog-container">
-        <div class="blog-thumbnails all-blog">
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
-                    <button class="btn btn-secondary">Read Article</button>
-                </div>
+    <div class="all-blogs-container">
+        <div class="small-blog-card">
+            <div class="small-blog-img"></div>
+            <div class="small-blog-text">
+                <h1>This is the blog heading</h1>
+                <p>This is a short description of the blog</p>
+                <p>
+                    <button class="btn btn-danger">Read Article</button>
+                </p>
             </div>
+        </div>
 
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
-                    <button class="btn btn-secondary">Read Article</button>
-                </div>
+        <div class="small-blog-card">
+            <div class="small-blog-img"></div>
+            <div class="small-blog-text">
+                <h1>This is the blog heading</h1>
+                <p>This is a short description of the blog</p>
+                <p>
+                    <button class="btn btn-danger">Read Article</button>
+                </p>
             </div>
+        </div>
 
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
-                    <button class="btn btn-secondary">Read Article</button>
-                </div>
+        <div class="small-blog-card">
+            <div class="small-blog-img"></div>
+            <div class="small-blog-text">
+                <h1>This is the blog heading</h1>
+                <p>This is a short description of the blog</p>
+                <p>
+                    <button class="btn btn-danger">Read Article</button>
+                </p>
             </div>
+        </div>
 
-            <div class="blog-card">
-                <div class="blog-image"></div>
-                <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
-                    <button class="btn btn-secondary">Read Article</button>
-                </div>
+        <div class="small-blog-card">
+            <div class="small-blog-img"></div>
+            <div class="small-blog-text">
+                <h1>This is the blog heading</h1>
+                <p>This is a short description of the blog</p>
+                <p>
+                    <button class="btn btn-danger">Read Article</button>
+                </p>
             </div>
         </div>
     </div>
+   
 
 
 
