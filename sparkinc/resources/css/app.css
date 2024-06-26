@@ -97,9 +97,9 @@ header{
     position: relative; /* Needed to position the pseudo-elements */
     font-family: "Lato", sans-serif;
     font-weight: 600;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.2px;
     color: #7e507b;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 50px;
     overflow: hidden; /* To prevent background overflow */
 }
@@ -205,21 +205,21 @@ section{
 
 .text-box h1{
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.5em;
     text-transform: uppercase;
     /* color: #694366; */
     color: rgb(103, 78, 147);
 }
 
 .text-box p{
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-top: 30px;
     color: #935d8f;
     font-weight: 200;
 }
 
 .learnmore{
-    padding: 12px 50px;
+    padding: 10px 28px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 0;
@@ -268,14 +268,14 @@ section{
 
 .card{
     width: 30%;
-    min-height: 400px;
+    min-height: 350px;
     margin: 10px 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
 
 .card-title{
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .card-title,
@@ -285,7 +285,7 @@ section{
 }
 
 .card-text{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 100;
     padding-top: 5px;
 }
@@ -334,24 +334,24 @@ section{
 }
 
 .description-container p:first-child{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     color: #1e3590;
 }
 
 .description-container h1{
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 .description-container p:nth-child(3){
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 200;
 }
 
 .about-btn{
-    padding: 12px 50px;
+    padding: 10px 28px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 0;
@@ -533,7 +533,7 @@ footer{
 
 .company-short p{
     font-weight: 200;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #444444;
 }
 
@@ -541,7 +541,7 @@ footer{
     width: 100%;
     padding: 10px;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     border-top: 1px solid darkcyan;
     color: #444444;
     font-weight: 400;
@@ -554,7 +554,7 @@ footer{
 
 .lists p{
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: #424242;
 }
 
@@ -565,9 +565,9 @@ footer{
 
 .lists ul li a{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #666666;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 
@@ -946,11 +946,12 @@ article{
 }
 
 .blog-container{
-    margin: 0 auto;
+    margin: 10% auto 5% auto;
     width: 90%;
     display: flex;
     flex-direction: row;
     height: 650px;
+
 }
 
 .blog-thumbnails{
@@ -981,7 +982,6 @@ article{
     display: flex;
     flex-direction: column;
     padding: 20px 10px 10px 10px;
-
 }
 
 .blog-text h1{
@@ -1050,8 +1050,8 @@ article{
 }
 
 .small-blog-card{
-    width: 22%;
-    margin: 1%;
+    width: 300px;
+    margin-right: 1%;
     display: flex;
     flex-direction: column;
 }
@@ -1069,7 +1069,7 @@ article{
 }
 
 .small-blog-text h1{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 500;
     color: #7e507b;
 }
