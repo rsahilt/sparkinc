@@ -656,8 +656,8 @@ footer{
 /* Individual doctor's card */
 .doc-cards{
     position: relative;
-    width: 380px;
-    height: 350px;
+    width: 320px;
+    height: 290px;
     margin: 20px;
     border-radius: 15px; 
     overflow: hidden; 
@@ -692,7 +692,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
-    padding: 20px 10px;
+    padding: 9px 10px;
     box-sizing: border-box;
     transition: bottom 0.4s ease-in-out;
     border-radius: 0 0 15px 15px; /* Match card's border radius for a cohesive look */
@@ -700,13 +700,13 @@ footer{
 
 .doc-info h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .doc-info p {
     margin: 5px 0 0;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .doc-info p:last-child{
@@ -844,17 +844,17 @@ body {
 }
 
 article{
-    margin:7% auto 4% auto;
+    margin:7% auto 1% auto;
     width: 70%;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #515151;
     font-weight: 200;
 }
 
 .products-container{
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -864,8 +864,7 @@ article{
 .prod-cards{
     position: relative;
     background-color: #fff;
-    width: 400px;
-    height: 450px;
+    width: 300px;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
@@ -878,7 +877,7 @@ article{
 }
 
 .prod-image{
-    height: 300px;
+    height: 250px;
     border-radius: 7px 7px 0 0;
     overflow: hidden;
 }
@@ -896,19 +895,20 @@ article{
     transform: scale(1.15);
 }
 
-.prod-details{
+/* .prod-details{
     height: 150px;
-}
+} */
 
 .prod-details h1{
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding:10px 0 0 20px;
+    margin-bottom: 0;
 }
 
 .prod-details p:first-of-type{
     padding-left: 20px;
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
     
@@ -918,15 +918,12 @@ article{
     text-align: center;
 }
 
-.prod-details p:last-child button{
-    padding: 4px 20px;
-    font-size: 0.9em;
-    letter-spacing: 0;
-    word-spacing: 2px;
-}
-
 .cart-btn{
-    padding: 12px 50px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    height: 40px;
+    font-size: 0.7em;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 0;
