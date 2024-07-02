@@ -46,3 +46,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Admin Dashboard Route
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'dashboard'])
     ->name('dashboard');
+
+// Admin Message List View
+Route::get('/admin/messages', [MessageController::class, 'index'])
+    ->name('admin.messages');
+
+// to delete the message
+Route::delete('/admin/messages/{id}', [MessageController::class, 'destroy'])
+     ->name('admin.messages.destroy')->middleware('auth');
