@@ -30,7 +30,7 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        $messages = Message::all();
+        $messages = Message::orderBy('created_at', 'desc')->take(5)->get();
         $totalMessages = Message::count();
         return view('admin.dashboard', compact('messages', 'totalMessages'));
     }
