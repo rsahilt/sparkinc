@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\Admin\MessageController;
 
 //FRONTEND ROUTES 
 
@@ -24,6 +25,10 @@ Route::get('/products', [FrontendController::class, 'products'])
 // route for blogs page
 Route::get('/blogs', [FrontendController::class, 'blogs'])
     ->name('blogpage');
+
+
+//send message to admin
+Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
 
 
 

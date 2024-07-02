@@ -15,21 +15,21 @@
                         <div class="col-lg-6">
                             <h2 class="mb-5">Get In Touch <br> It's easy.</h2>
                         
-                            <form action="#" class="border-right pr-5 mb-5" method="post" novalidate>
+                            <form action="{{ route('send.message') }}" method="POST" novalidate class="border-right pr-5 mb-5">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <input type="text" class="form-control" name="firstname" id="fname" placeholder="First name">
+                                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name">
                                     </div>
 
                                     <div class="col-md-6 form-group">
-                                        <input type="text" class="form-control" name="lastname" id="lname" placeholder="Last name">
+                                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name">
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                     </div>
                                 </div>  
 

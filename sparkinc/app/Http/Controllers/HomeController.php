@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Message;
 
 class HomeController extends Controller
 {
@@ -29,6 +30,8 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        return view('admin.dashboard');
+        $messages = Message::all();
+        $totalMessages = Message::count();
+        return view('admin.dashboard', compact('messages', 'totalMessages'));
     }
 }

@@ -57,7 +57,7 @@
                 <div class="admin-card" >
                     <div class="admin-card-body">
                         <h5 class="card-title">Messages</h5>
-                        <p class="card-text" style="font-size:2rem">10</p>
+                        <p class="card-text" style="font-size:2rem">{{ $totalMessages }}</p>
                     </div>
                 </div>
 
