@@ -28,7 +28,7 @@ class MessageController extends Controller
 
         Message::create($validatedData);
 
-        return redirect('/')->with('success', 'Your message has been sent succefully!');
+        return redirect('/contact')->with('success', 'Your message has been sent succefully!');
     }
 
     public function destroy($id)
