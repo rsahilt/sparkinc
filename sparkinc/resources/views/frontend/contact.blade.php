@@ -20,6 +20,7 @@
     $(document).ready(function() {
         setTimeout(function() {
             $('#successModal').removeClass('show').addClass('fade').modal('hide');
+            location.reload(); // Reload the page after hiding the modal
         }, 3000); // 3 seconds
     });
     </script>
