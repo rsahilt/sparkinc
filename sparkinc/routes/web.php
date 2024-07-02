@@ -35,4 +35,9 @@ Route::get('/blogs', [FrontendController::class, 'blogs'])
 
 Auth::routes();
 
+// User profile route
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Admin Dashboard Route
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'dashboard'])
+    ->name('dashboard');

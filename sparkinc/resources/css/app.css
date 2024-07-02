@@ -6,6 +6,8 @@ body{
     scroll-behavior: smooth;
 }
 
+
+
 /* ///////////////////// utlity bar ////////////////////////*/
 .utility-bar{
     /* background: linear-gradient(#d386cd, #e0aadc); */
@@ -61,8 +63,8 @@ header{
     height: 120px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     z-index: 100;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     background-color: #fff;
 }
 
@@ -515,7 +517,7 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 .company-short{
@@ -1092,3 +1094,90 @@ article{
     color: #e265dc;
     border: 2px solid #e797e2;
 }
+
+
+
+/* /////////////////  ADMIN DASHBOARD  //////////////////*/
+.admin-header{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    background-color: rgb(40,47,71);
+    border-bottom: 1px solid rgb(159, 161, 164);
+}
+
+.admin-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40,47,71);
+}
+
+.admin-logo h1{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 39px;
+    margin-top: 10px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.admin-nav-header{
+    width: 80%;
+}
+
+.dropdown-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(214, 205, 205);
+    float: right;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+.admin-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(40,47,71);
+    border-right: 1px solid rgb(159, 161, 164);
+}
+
+.admin-content{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(241, 206, 206, 0.2);
+}
+
+.admin-nav ul{
+    list-style: none;
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 0;
+}
+
+.admin-nav ul li:first-of-type{
+    margin-top: 20px;
+}
+
+.admin-nav ul li{
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.admin-nav ul li a{
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
