@@ -1132,10 +1132,16 @@ article{
     height: 40px;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: rgb(214, 205, 205);
     float: right;
     margin-right: 20px;
     margin-top: 4px;
+}
+
+
+.dropdown-icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .admin-section{
@@ -1156,6 +1162,28 @@ aside{
     width: 80%;
     height: 100%;
     background-color: rgba(241, 206, 206, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-container{
+    width: 100vw;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.admin-card{
+    width: 250px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 18px;
+    font-size: 0.8em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .admin-nav ul{
@@ -1176,6 +1204,7 @@ aside{
 
 .admin-nav ul li a{
     color: #fff;
+    font-size: 0.9em;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
