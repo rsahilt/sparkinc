@@ -46,6 +46,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/admin', [AdminController::class, 'index'])
     ->name('admin.dashboard')->middleware('auth');
 
+////////////////////////////// Message Controller ////////////////////////////
 // Admin Message List View
 Route::get('/admin/messages', [MessageController::class, 'index'])
     ->name('admin.messages')->middleware('auth');;
@@ -54,10 +55,16 @@ Route::get('/admin/messages', [MessageController::class, 'index'])
 Route::delete('/admin/messages/{id}', [MessageController::class, 'destroy'])
      ->name('admin.messages.destroy')->middleware('auth');
 
+
+///////////////////////////// Product Controller ///////////////////////////////
 //products list view
 Route::get('/admin/products', [ProductController::class, 'index'])
         ->name('admin.products')->middleware('auth');
 
+// create a new product
+Route::get('/admin/products/create', [ProductController::class, 'create'])
+    ->name('create')->middleware('auth');
+
 // delete products from admin
 Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])
-->name('deleteproducts')->middleware('auth');
+    ->name('deleteproducts')->middleware('auth');

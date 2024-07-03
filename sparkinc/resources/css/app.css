@@ -1399,4 +1399,35 @@ aside{
     background-color: rgba(59, 59, 219);
 }
 
+.add-new{
+    background-color: rgb(49, 140, 49);
+    /* width: 100px; */
+    width: 120px;
+    margin:10px 20px 20px 20px;
+    border-radius: 3px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
 
+.add-new a{
+    color: white;
+}
+
+.add-new:hover{
+    background-color: rgb(30, 150, 30);
+    cursor: pointer;
+}
+
+.create-form{
+    margin-left: 20px;
+    width: 70%;
+}
+
+.admin-form-control{
+    height: 30px;
+    width: 500px;
+    border: 1px solid rgb(251, 236, 236);
+}

@@ -17,6 +17,13 @@ class ProductController extends Controller
         return view('admin.products', compact('title', 'products', 'slug', 'totalProducts'));
     }
 
+    public function create()
+    {
+        $title = "Add New Product";
+        $slug="dashboardproducts";
+        return view('/admin/createproducts', compact('title','slug'));
+    }
+
     public function destroy($id)
     {
         $product = Product::find($id);

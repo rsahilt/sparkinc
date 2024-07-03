@@ -16,6 +16,10 @@
         <div class="admin-prod-container">
             <h1>{{ $title }}</h1>
 
+            <div class="add-new">
+                <a href="/admin/products/create">Add Product</a>
+            </div>
+
             <!-- flash messages -->
             @if (session('success'))
                 <div class="alert alert-success mt-7 rounded-lg bg-green-200">
