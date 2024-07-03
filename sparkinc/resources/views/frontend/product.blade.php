@@ -10,91 +10,24 @@
     <article>Ensure you're always prepared for emergencies with our comprehensive medical kits, designed to provide essential first aid supplies for home, work, or travel.</article>
 
     <div class="products-container">
+
+        @foreach($products as $product)
         <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
             <div class="prod-image">
                 <img src="{{asset('/images/about.jpg')}}" alt="product-image">
             </div>
 
             <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
+                <h1>{{ $product->name }}</h1>
+                <span>Brand: {{ $product->brand }}</span>
+                <p>Rs.{{ $product->unit_price }}</p>
                 <p>
                     <button class="btn btn-primary cart-btn">Add to Cart</button>
                 </p>
             </div>
         </div>
+        @endforeach
 
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
-            </div>
-
-            <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
-                <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
-                </p>
-            </div>
-        </div>
-
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
-            </div>
-
-            <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
-                <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
-                </p>
-            </div>
-        </div>
-
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
-            </div>
-
-            <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
-                <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
-                </p>
-            </div>
-        </div>
-
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
-            </div>
-
-            <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
-                <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
-                </p>
-            </div>
-        </div>
-
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
-            </div>
-
-            <div class="prod-details">
-                <h1>Spandan ECG Kit</h1>
-                <p>Rs.500</p>
-                <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
-                </p>
-            </div>
-        </div>
-
-        
     </div>
 
 

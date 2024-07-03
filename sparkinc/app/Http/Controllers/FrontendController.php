@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Product;
 
 class FrontendController extends Controller
 {
@@ -27,8 +28,9 @@ class FrontendController extends Controller
 
     public function products(){
         $title = "Products";
+        $products = Product::all();
         $slug = "productpageslug";
-        return view('frontend.product', compact('title', 'slug'));
+        return view('frontend.product', compact('title', 'products', 'slug'));
     }
 
     public function blogs(){
