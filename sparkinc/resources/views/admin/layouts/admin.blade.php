@@ -44,9 +44,11 @@
                     <li class="{{ $slug === 'dashboardmessage' ? 'activeadminnav' : '' }}">                       
                         <a href="/admin/messages"><i class="fa fa-envelope" style="padding-left:0"></i> &nbsp;Messages</a>
                     </li>
+
+                    <li>
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
+                                            document.getElementById('logout-form').submit();"><i class="fa fa-sign-out-alt"></i> &nbsp;
                             {{ __('Logout') }}
                         </a>
 
@@ -54,7 +56,7 @@
                             @csrf
                         </form>
                     <li>
-                        <a href="#"><i class="fa fa-sign-out-alt"></i> &nbsp;Logout</a>
+                        <a href="#"></a>
                     </li>
                 </ul>
             </nav>

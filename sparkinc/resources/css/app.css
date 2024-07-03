@@ -1141,14 +1141,21 @@ article{
 
 /* //////////////////////// slug ///////////////////////*/
 
-.activeadminnav{
+.activeadminnav,
+.admin-nav li:hover
+{
     background-color: rgb(225, 225, 231);
     border-radius: 3px;
+    cursor: pointer;
 }
 
-.activeadminnav>a{
+
+
+.activeadminnav>a,
+.admin-nav li:hover>a{
     color: black !important;
 }
+
 
 .admin-header{
     width: 100%;
@@ -1289,9 +1296,11 @@ aside{
     flex-direction: row;
     display: flex;
     flex-direction: row;
-    background-color: #f1f0f3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 10px;
     margin-top: 20px;
+    border-radius: 4px;
+    background-color: #efefef;
 
 }
 
