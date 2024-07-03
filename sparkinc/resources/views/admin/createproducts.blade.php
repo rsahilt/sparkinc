@@ -2,17 +2,6 @@
 
 @section('content')
     <div class="admin-content">
-        @if(session('success'))
-            <div class="alert alert-danger" id="successMessage">
-                {{ session('success') }}
-            </div>
-            <script>
-            setTimeout(function() {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 3000);
-        </script>
-        @endif
-
         <div class="admin-prod-container">
             <h1>{{ $title }}</h1>
         </div>
@@ -22,25 +11,32 @@
         </div>
 
         <div class="create-form">
-            <form>
+            <form action="{{ route('storeproducts') }}" novalidate 
+            method="POST">
+                @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Product Name</label>
-                    <input type="text" class="form-control admin-form-control" id="name">
+                    <input type="text" class="form-control admin-form-control" id="name" name="name">
                 </div>
 
                 <div class="mb-3">
                     <label for="brand" class="form-label">Brand Name</label>                    
-                    <input type="text" class="form-control admin-form-control" id="brand">
+                    <input type="text" class="form-control admin-form-control" id="brand" name="brand"> 
                 </div>
 
                 <div class="mb-3">
-                    <label for="price" class="form-label">Unit Price</label>                    
-                    <input type="text" class="form-control admin-form-control" id="price">
+                    <label for="unit_price" class="form-label">Unit Price</label>                    
+                    <input type="text" class="form-control admin-form-control" id="unit_price" name="unit_price">
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>                    
+                    <input type="text" class="form-control admin-form-control" id="image" name="image">
                 </div>
 
                 <div class="mb-3">
                     <label for="description" class="form-label">Description</label><br>
-                    <textarea id="description" name="description" cols="50" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your description here"></textarea>
+                    <textarea name="description" id="description" name="description" cols="50" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your description here"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Add Product</button>

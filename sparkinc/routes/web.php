@@ -65,6 +65,11 @@ Route::get('/admin/products', [ProductController::class, 'index'])
 Route::get('/admin/products/create', [ProductController::class, 'create'])
     ->name('create')->middleware('auth');
 
+
+//route to store products
+Route::post('/admin/products/', [ProductController::class, 'store'])
+    ->name('storeproducts')->middleware('auth');
+
 // delete products from admin
 Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])
     ->name('deleteproducts')->middleware('auth');

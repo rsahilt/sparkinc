@@ -24,6 +24,31 @@ class ProductController extends Controller
         return view('/admin/createproducts', compact('title','slug'));
     }
 
+    public function store(Request $request)
+    {
+        $valid = $request->validate([
+            'name' => 'required|string|min:1|max:255',
+            'brand' => 'required|string|min:1|max:255',
+            'unit_price' => 'required|numeric|min:20|max:100000',
+            'description' => 'string|min:10',
+            'image' => 'required|string|min:1|max:255'
+        ]);
+        $product = Product::create($valid);
+        
+        // if($file = $request->file('image')){
+        //     $filename = uniqid() . '_' . $file->getClientOriginalName();
+        //     Storage::disk('images')->put($filename,File::get($file));
+        //     $product->image=$filename;
+        //     $product->save();
+        // }
+
+        if ($product) {
+            return redirect()->route('storeproducts')->with('success', 'Product added successfully');
+        } else {
+            return redirect('/admin/products/create');
+        }
+    }
+
     public function destroy($id)
     {
         $product = Product::find($id);
