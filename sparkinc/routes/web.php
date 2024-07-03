@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\MessageController;
 
 //FRONTEND ROUTES 
@@ -32,9 +33,6 @@ Route::post('/send-message', [MessageController::class, 'store'])->name('send.me
 
 
 
-
-
-
 // DO NOT TOUCH RIGHT NOW
 // ADMIN ROUTES
 
@@ -44,12 +42,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Admin Dashboard Route
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'dashboard'])
-    ->name('dashboard');
+Route::get('/admin', [AdminController::class, 'index'])
+    ->name('admin.dashboard')->middleware('auth');
 
 // Admin Message List View
 Route::get('/admin/messages', [MessageController::class, 'index'])
-    ->name('admin.messages');
+    ->name('admin.messages')->middleware('auth');;
 
 // to delete the message
 Route::delete('/admin/messages/{id}', [MessageController::class, 'destroy'])

@@ -1,7 +1,7 @@
 @extends('admin.layouts.admin')
 
 @section('content')
-    <div class="message-container">
+    <div class="admin-content">
         @if(session('success'))
             <div class="alert alert-danger" id="successMessage">
                 {{ session('success') }}
@@ -20,6 +20,7 @@
                 <div class="user">
                     <div class="username">{{ $message->firstname }} {{ $message->lastname }}</div>
                     <div class="useremail"><em>{{ $message->email }}</em></div>
+                    <div class="emaildate">{{ $message->created_at->format('F j, Y') }}</div>
                     <div class="userreview">{{ $message->message }}</div>
                 </div>
                 <form action="{{ route('admin.messages.destroy', $message->id) }}" method="POST" novalidate>

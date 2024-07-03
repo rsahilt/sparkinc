@@ -29,8 +29,8 @@
         <aside>
             <nav class="admin-nav">
                 <ul>
-                    <li>
-                        <a href="#"><i class="fa fa-tachometer-alt"></i> &nbsp;Dashboard</a>
+                    <li class="{{ $slug === 'dashboard' ? 'activeadminnav' : '' }}">
+                        <a href="/admin"><i class="fa fa-tachometer-alt"></i> &nbsp;Dashboard</a>
                     </li>
 
                     <li>
@@ -41,10 +41,18 @@
                         <a href="#"><i class="fa fa-blog"></i> &nbsp;Blogs</a>
                     </li>
 
-                    <li>
-                        <a href="#"><i class="fa fa-envelope" style="padding-left:0"></i> &nbsp;Messages</a>
+                    <li class="{{ $slug === 'dashboardmessage' ? 'activeadminnav' : '' }}">                       
+                        <a href="/admin/messages"><i class="fa fa-envelope" style="padding-left:0"></i> &nbsp;Messages</a>
                     </li>
-                    
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                     <li>
                         <a href="#"><i class="fa fa-sign-out-alt"></i> &nbsp;Logout</a>
                     </li>
