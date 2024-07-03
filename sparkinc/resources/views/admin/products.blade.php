@@ -2,15 +2,26 @@
 
 @section('content')
     <div class="admin-content">
-        @if(session('success'))
-            <div class="alert alert-danger" id="successMessage">
+    @if (session('success'))
+            <div id="successMessage" class="alert alert-success mt-7 rounded-lg bg-green-200">
                 {{ session('success') }}
             </div>
             <script>
-            setTimeout(function() {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 3000);
-        </script>
+                setTimeout(function() {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 3000);
+            </script>
+        @endif
+
+        @if (session('danger'))
+            <div id="dangerMessage" class="alert alert-danger mt-7 rounded-lg bg-red-200">
+                {{ session('danger') }}
+            </div>
+            <script>
+                setTimeout(function() {
+                    document.getElementById('dangerMessage').style.display = 'none';
+                }, 3000);
+            </script>
         @endif
         
         <div class="admin-prod-container">
@@ -20,25 +31,7 @@
                 <a href="/admin/products/create">Add Product</a>
             </div>
 
-            <!-- flash messages -->
-            @if (session('success'))
-                <div class="alert alert-success mt-7 rounded-lg bg-green-200">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if (session('error'))
-                <div class="alert alert-error mt-7 rounded-lg bg-green-200">
-                    {{ session('error') }}
-                </div>
-            @endif
-
-            @if (session('danger'))
-                <div class="alert alert-danger mt-7 rounded-lg bg-red-200">
-                    {{ session('danger') }}
-                </div>
-            @endif
-
+        
             <div class="admin-prod-table">
                 <table class="table table-striped">
                     <thead>
