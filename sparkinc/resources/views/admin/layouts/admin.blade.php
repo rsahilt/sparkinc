@@ -33,8 +33,8 @@
                         <a href="/admin"><i class="fa fa-tachometer-alt"></i> &nbsp;Dashboard</a>
                     </li>
 
-                    <li>
-                        <a href="#"><i class="fa fa-boxes"></i> &nbsp;Products</a>
+                    <li class="{{ $slug === 'dashboardproducts' ? 'activeadminnav' : '' }}">
+                        <a href="/admin/products"><i class="fa fa-boxes"></i> &nbsp;Products</a>
                     </li>
 
                     <li>

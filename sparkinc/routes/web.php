@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\MessageController;
 
 //FRONTEND ROUTES 
@@ -52,3 +53,11 @@ Route::get('/admin/messages', [MessageController::class, 'index'])
 // to delete the message
 Route::delete('/admin/messages/{id}', [MessageController::class, 'destroy'])
      ->name('admin.messages.destroy')->middleware('auth');
+
+//products list view
+Route::get('/admin/products', [ProductController::class, 'index'])
+        ->name('admin.products')->middleware('auth');
+
+// delete products from admin
+Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])
+->name('deleteproducts')->middleware('auth');

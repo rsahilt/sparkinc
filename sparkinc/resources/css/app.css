@@ -1353,5 +1353,50 @@ aside{
     margin-top: 10px;
 }
 
+.admin-prod-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-prod-container h1{
+    font-size: 1.4em;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.admin-prod-table{
+    margin-left: 20px;
+}
+
+.admin-prod-thumbnail{
+    width: 100px;
+    height: 100px;
+}
+
+.admin-delete-btn {
+    background-color: rgb(227, 39, 39);
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-delete-btn:hover {
+    background-color: rgb(199, 6, 6);
+}
+
+.admin-edit-btn{
+    color: white;
+    background-color: rgb(76, 76, 220);
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-right: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-edit-btn:hover{
+    background-color: rgba(59, 59, 219);
+}
 
 
