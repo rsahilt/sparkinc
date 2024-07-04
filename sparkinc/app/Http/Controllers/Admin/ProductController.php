@@ -31,7 +31,7 @@ class ProductController extends Controller
             'brand' => 'required|string|min:1|max:255',
             'unit_price' => 'required|numeric|min:20|max:100000',
             'description' => 'string|min:10',
-            'image' => 'required|string|min:1|max:255'
+            'image' => 'required|string|min:1|max:255',
         ]);
         $product = Product::create($valid);
         
@@ -48,6 +48,48 @@ class ProductController extends Controller
             return redirect('/admin/products/create');
         }
     }
+
+    public function edit($id)
+    {
+        $product = Product::find($id);
+        $title = 'Edit Product';
+        $slug="dashboardproducts";
+        if ($product) {
+            return view('admin/editproducts', compact('product', 'title','slug'));
+        } else {
+            return redirect('/admin/products');
+        }
+    }
+
+    public function update(Request $request, $id)
+    {
+        $product = Product::find($id);
+
+        if ($product) {
+            $validatedData = $request->validate([
+                'name' => 'required|string|min:1|max:255',
+                'image' => 'required|string|min:1|max:255',
+                'unit_price' => 'required|numeric|min:20|max:100000',
+                'description' => 'string|min:10',
+                'brand' => 'required|string|min:1|max:255'
+            ]);
+            $product->update($validatedData);
+
+            //Handle image uploads
+            // if($file = $request->file('image')){
+                
+            //     $filename = uniqid() . '_' . $file->getClientOriginalName();
+            //     Storage::disk('images')->put($filename,File::get($file));
+            //     $product->image=$filename;
+            //     $product->save();
+            // }
+            
+            return redirect()->route('admin.products')->with('success','Changes Saved');
+        } else {
+            return redirect('/admin/editproducts');
+        }
+    }
+
 
     public function destroy($id)
     {

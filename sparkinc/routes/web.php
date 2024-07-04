@@ -65,6 +65,14 @@ Route::get('/admin/products', [ProductController::class, 'index'])
 Route::get('/admin/products/create', [ProductController::class, 'create'])
     ->name('create')->middleware('auth');
 
+//edit products form
+Route::get('/admin/products/{id}/edit', [ProductController::class, 'edit'])
+    ->name('editproduct')->middleware('auth');
+
+// store updated products
+Route::put('/admin/products/{id}', [ProductController::class, 'update'])
+        ->name('update')->middleware('auth');
+
 
 //route to store products
 Route::post('/admin/products/', [ProductController::class, 'store'])

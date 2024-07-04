@@ -54,7 +54,7 @@
                             <td>{{ $product->unit_price }}</td>
                             <td class="px-6 py-4 text-left">
                                 <div class="inline-block" style="display:flex;">
-                                    <a href="#" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    <a href="{{ route('editproduct', ['id' => $product->id]) }}" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                     <!-- asking the user if they really want to delete, in the form of an alert -->
                                     <form action="{{ route('deleteproducts', $product->id) }}" method="POST" novalidate class="inline-block">
                                         @csrf
