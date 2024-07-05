@@ -22,7 +22,7 @@
                 <span>Brand: {{ $product->brand }}</span>
                 <p>Rs.{{ $product->unit_price }}</p>
                 <p>
-                    <button class="btn btn-primary cart-btn">Add to Cart</button>
+                    <!-- <button class="btn btn-primary cart-btn">Add to Cart</button> -->
                 </p>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <div class="inner-utility-bar">
         <div class="utility-contacts">
             <i class="fa fa-phone"></i> &nbsp; 9876543210
-            <i class="fa fa-envelope"></i> &nbsp; contact@sparkinc.com
+            <i class="fa fa-envelope"></i> &nbsp; support@sparkinc.com
         </div>
 
         <div class="utility-social-media">
