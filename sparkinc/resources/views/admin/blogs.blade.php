@@ -37,6 +37,7 @@
                     <thead>
                         <tr>
                             <th scope="col">Id</th>
+                            <th scope="col">Image</th>
                             <th scope="col">Title</th>
                             <th scope="col">Author</th>
                             <th scope="col">Posted on</th>
@@ -47,6 +48,7 @@
                         @foreach($blogs as $blog)
                         <tr>
                             <th scope="row">{{ $blog->id }}</th>
+                            <td><img src="{{ asset('storage/images/' . $blog->image) }}" class="admin-prod-thumbnail" alt="{{ $blog->name }}"></td>
                             <td>{{ $blog->title }}</td>
                             <td>{{ $blog->author }}</td>
                             <td>{{ $blog->created_at }}</td>
