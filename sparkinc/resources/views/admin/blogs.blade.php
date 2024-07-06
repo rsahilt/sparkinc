@@ -28,7 +28,7 @@
             <h1>{{ $title }}</h1>
 
             <div class="add-new">
-                <a href="/admin/products/create">Create Blog</a>
+                <a href="/admin/blogs/create">Create Blog</a>
             </div>
 
         
@@ -48,13 +48,13 @@
                         <tr>
                             <th scope="row">{{ $blog->id }}</th>
                             <td>{{ $blog->title }}</td>
-                            <td>{{ $product->author }}</td>
-                            <td>{{ $product->created_at }}</td>
+                            <td>{{ $blog->author }}</td>
+                            <td>{{ $blog->created_at }}</td>
                             <td class="px-6 py-4 text-left">
                                 <div class="inline-block" style="display:flex;">
-                                    <a href="{{ route('editproduct', ['id' => $blog->id]) }}" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    <a href="{{ route('editblog', ['id' => $blog->id]) }}" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                     <!-- asking the user if they really want to delete, in the form of an alert -->
-                                    <form action="{{ route('deleteproducts', $blog->id) }}" method="POST" novalidate class="inline-block">
+                                    <form action="{{ route('deleteblogs', $blog->id) }}" method="POST" novalidate class="inline-block">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="admin-delete-btn font-medium text-blue-600 dark:text-blue-500 hover:underline" onclick="return confirm('Do you really want to remove the blog?')">Delete</button>

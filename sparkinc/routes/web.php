@@ -90,6 +90,15 @@ Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])
 Route::get('/admin/blogs', [BlogController::class, 'index'])
         ->name('admin.blogs')->middleware('auth');
 
+
+//create a new blog        
+Route::get('/admin/blogs/create', [BlogController::class, 'create'])
+        ->name('create')->middleware('auth');
+
+//route to store products
+Route::post('/admin/blogs/', [BlogController::class, 'store'])
+        ->name('storeblogs')->middleware('auth');
+
 // route to delete blog
 Route::delete('/admin/blogs/{id}', [BlogController::class, 'destroy'])
         ->name('deleteblogs')->middleware('auth');

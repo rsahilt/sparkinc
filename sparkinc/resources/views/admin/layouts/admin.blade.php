@@ -37,8 +37,8 @@
                         <a href="/admin/products"><i class="fa fa-boxes"></i> &nbsp;Products</a>
                     </li>
 
-                    <li>
-                        <a href="#"><i class="fa fa-blog"></i> &nbsp;Blogs</a>
+                    <li class="{{ $slug === 'dashboardblogs' ? 'activeadminnav' : '' }}">
+                        <a href="/admin/blogs"><i class="fa fa-blog"></i> &nbsp;Blogs</a>
                     </li>
 
                     <li class="{{ $slug === 'dashboardmessage' ? 'activeadminnav' : '' }}">                       
