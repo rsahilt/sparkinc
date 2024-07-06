@@ -7,13 +7,24 @@
         <p>Spark Inc / {{ $title }}</p>
     </div>
 
+    
     <div class="blog-container blog-highlights">
         <div class="blog-thumbnails">
             <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
                 <div class="blog-image"></div>
                 <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
+                    <h1>{{ $latestBlog->title }}</h1>
+                    <p>
+                        <?php
+                            $description = explode(' ', $latestBlog->description);
+                            $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                            echo $limitedDesc;
+                            // if summary has more than 15 words, display ... after it
+                            if (count($description) > 15) {
+                                echo '...';
+                            }
+                        ?>
+                    </p>
                     <button class="btn btn-secondary">Read Article</button>
                 </div>
             </div>
@@ -21,8 +32,18 @@
             <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
                 <div class="blog-image"></div>
                 <div class="blog-text">
-                    <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-                    <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.</p>
+                    <h1>{{ $anotherlatestBlog->title }}</h1>
+                    <p>
+                        <?php
+                            $description = explode(' ', $anotherlatestBlog->description);
+                            $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                            echo $limitedDesc;
+                            // if summary has more than 15 words, display ... after it
+                            if (count($description) > 15) {
+                                echo '...';
+                            }
+                        ?>
+                    </p>
                     <button class="btn btn-secondary">Read Article</button>
                 </div>
             </div>
@@ -30,20 +51,25 @@
 
         <div class="blog-lists" data-aos="fade-up" data-aos-direction="1500">
             <p>Top Blogs</p>
-            <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-            <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.
-            </p>
-            <p><a href="#">Read More &rarr;</a></p>
+            <br>
+            @foreach($blogs as $blog)
+                <h1>{{ $blog->title }}</h1>
+     
+                <p style="color:gray" class="authordate">Posted by: {{ $blog->author }} on {{ $blog->created_at->format('d F, Y') }}</p>
 
-            <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-            <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.
-            </p>
-            <p><a href="#">Read More &rarr;</a></p>
+                <p><?php
+                    $description = explode(' ', $blog->description);
+                    $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                    echo $limitedDesc;
+                    // if summary has more than 15 words, display ... after it
+                    if (count($description) > 15) {
+                        echo '...';
+                    }
+                ?></p>
+                <p><a href="#">Read More &rarr;</a></p>
+            @endforeach
 
-            <h1>Your Health Hub: Tips for a Healthy Lifestyle</h1>
-            <p>Whether you're looking to improve your diet, boost your fitness routine, manage stress, or understand the latest medical trends, we've got you covered.
-            </p>
-            <p><a href="#">Read More &rarr;</a></p>
+
         </div>
     </div>
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Product;
+use App\Models\Blog;
 
 class FrontendController extends Controller
 {
@@ -35,7 +36,10 @@ class FrontendController extends Controller
 
     public function blogs(){
         $title = "Blogs";
+        $blogs = Blog::all();
         $slug = "blogpageslug";
-        return view('frontend.blog', compact('title', 'slug'));
+        $latestBlog = Blog::orderBy('created_at', 'desc')->first();
+        $anotherlatestBlog = Blog::orderBy('created_at', 'desc')->skip(1)->first();
+        return view('frontend.blog', compact('title', 'blogs', 'slug', 'latestBlog', 'anotherlatestBlog'));
     }
 }
