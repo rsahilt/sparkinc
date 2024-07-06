@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 use App\Models\Blog;
 
@@ -34,16 +36,16 @@ class BlogController extends Controller
             'author' => 'required|string|min:1|max:255',
             'category' => 'required|string|min:1|max:255',
             'description' => 'string|min:10',
-            'image' => 'required|string|min:1|max:255',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
         $blog = Blog::create($valid);
         
-        // if($file = $request->file('image')){
-        //     $filename = uniqid() . '_' . $file->getClientOriginalName();
-        //     Storage::disk('images')->put($filename,File::get($file));
-        //     $product->image=$filename;
-        //     $product->save();
-        // }
+        if($file = $request->file('image')){
+            $filename = uniqid() . '_' . $file->getClientOriginalName();
+            Storage::disk('images')->put($filename,File::get($file));
+            $blog->image=$filename;
+            $blog->save();
+        }
 
         if ($blog) {
             return redirect()->route('storeblogs')->with('success', 'Blog created successfully');
@@ -74,18 +76,18 @@ class BlogController extends Controller
                 'author' => 'required|string|min:1|max:255',
                 'category' => 'required|string|min:1|max:255',
                 'description' => 'string|min:10',
-                'image' => 'required|string|min:1|max:255',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             ]);
             $blog->update($validatedData);
 
             //Handle image uploads
-            // if($file = $request->file('image')){
+            if($file = $request->file('image')){
                 
-            //     $filename = uniqid() . '_' . $file->getClientOriginalName();
-            //     Storage::disk('images')->put($filename,File::get($file));
-            //     $product->image=$filename;
-            //     $product->save();
-            // }
+                $filename = uniqid() . '_' . $file->getClientOriginalName();
+                Storage::disk('images')->put($filename,File::get($file));
+                $blog->image=$filename;
+                $blog->save();
+            }
             
             return redirect()->route('admin.blogs')->with('success','Changes Saved');
         } else {

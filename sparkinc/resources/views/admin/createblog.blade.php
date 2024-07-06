@@ -12,7 +12,7 @@
 
         <div class="create-form">
             <form action="{{ route('storeblogs') }}" novalidate 
-            method="POST">
+            method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Blog Title</label>
@@ -41,7 +41,7 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Image</label>                    
-                    <input type="text" class="form-control admin-form-control" id="image" name="image">
+                    <input type="file" class="form-control admin-form-control" id="image" name="image">
                     @error('image')
                         <span class="text-red-500">{{ $message }}</span>
                     @enderror

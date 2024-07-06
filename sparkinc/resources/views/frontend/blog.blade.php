@@ -11,7 +11,9 @@
     <div class="blog-container blog-highlights">
         <div class="blog-thumbnails">
             <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
-                <div class="blog-image"></div>
+                <div class="blog-image">
+                    <img src="{{ asset('storage/images/' . $latestBlog->image) }}" alt="product-image">
+                </div>
                 <div class="blog-text">
                     <h1>{{ $latestBlog->title }}</h1>
                     <p style="color:gray" class="authordate">Posted by: {{ $latestBlog->author }} on {{ $latestBlog->created_at->format('d F, Y') }}</p>
@@ -31,7 +33,9 @@
             </div>
 
             <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
-                <div class="blog-image"></div>
+                <div class="blog-image">
+                    <img src="{{ asset('storage/images/' . $anotherlatestBlog->image) }}" alt="product-image">
+                </div>
                 <div class="blog-text">
                     <h1>{{ $anotherlatestBlog->title }}</h1>
                     <p style="color:gray" class="authordate">Posted by: {{ $anotherlatestBlog->author }} on {{ $anotherlatestBlog->created_at->format('d F, Y') }}</p>
@@ -79,7 +83,9 @@
        
     @foreach($restoftheblogs as $restoftheblog)
         <div class="small-blog-card">
-            <div class="small-blog-img"></div>
+            <div class="small-blog-img">
+                <img src="{{ asset('storage/images/' . $restoftheblog->image) }}" alt="product-image">
+            </div>
             <div class="small-blog-text">
                 <h1>{{ $restoftheblog->title }}</h1>
                 <p style="color:gray" class="authordate">Posted by: {{ $restoftheblog->author }} on {{ $restoftheblog->created_at->format('d F, Y') }}</p>
