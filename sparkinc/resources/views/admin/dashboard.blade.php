@@ -20,7 +20,7 @@
             <div class="admin-card" >
                 <div class="admin-card-body">
                     <h5 class="card-title">Blogs</h5>
-                    <p class="card-text" style="font-size:2rem">10</p>
+                    <p class="card-text" style="font-size:2rem">{{ $totalBlogs }}</p>
                 </div>
             </div>
             

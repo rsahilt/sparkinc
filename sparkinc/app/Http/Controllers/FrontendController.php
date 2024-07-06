@@ -40,6 +40,7 @@ class FrontendController extends Controller
         $slug = "blogpageslug";
         $latestBlog = Blog::orderBy('created_at', 'desc')->first();
         $anotherlatestBlog = Blog::orderBy('created_at', 'desc')->skip(1)->first();
-        return view('frontend.blog', compact('title', 'blogs', 'slug', 'latestBlog', 'anotherlatestBlog'));
+        $restoftheblogs = Blog::where('id', '>=', 3)->get();
+        return view('frontend.blog', compact('title', 'blogs', 'slug', 'restoftheblogs', 'latestBlog', 'anotherlatestBlog'));
     }
 }

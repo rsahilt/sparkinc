@@ -52,6 +52,47 @@ class BlogController extends Controller
         }
     }
 
+    public function edit($id)
+    {
+        $blog = Blog::find($id);
+        $title = 'Edit Blog';
+        $slug="dashboardblogs";
+        if ($blog) {
+            return view('admin/editblog', compact('blog', 'title','slug'));
+        } else {
+            return redirect('/admin/blogs');
+        }
+    }
+
+    public function update(Request $request, $id)
+    {
+        $blog = Blog::find($id);
+
+        if ($blog) {
+            $validatedData = $request->validate([
+                'title' => 'required|string|min:1|max:255',
+                'author' => 'required|string|min:1|max:255',
+                'category' => 'required|string|min:1|max:255',
+                'description' => 'string|min:10',
+                'image' => 'required|string|min:1|max:255',
+            ]);
+            $blog->update($validatedData);
+
+            //Handle image uploads
+            // if($file = $request->file('image')){
+                
+            //     $filename = uniqid() . '_' . $file->getClientOriginalName();
+            //     Storage::disk('images')->put($filename,File::get($file));
+            //     $product->image=$filename;
+            //     $product->save();
+            // }
+            
+            return redirect()->route('admin.blogs')->with('success','Changes Saved');
+        } else {
+            return redirect('/admin/editblog');
+        }
+    }
+
     //delete the blog
     public function destroy($id)
     {

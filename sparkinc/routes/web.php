@@ -95,9 +95,17 @@ Route::get('/admin/blogs', [BlogController::class, 'index'])
 Route::get('/admin/blogs/create', [BlogController::class, 'create'])
         ->name('create')->middleware('auth');
 
-//route to store products
+//route to store blogs
 Route::post('/admin/blogs/', [BlogController::class, 'store'])
         ->name('storeblogs')->middleware('auth');
+
+//edit blogs form
+Route::get('/admin/blogs/{id}/edit', [BlogController::class, 'edit'])
+        ->name('editblog')->middleware('auth');
+
+// store updated products
+Route::put('/admin/blogs/{id}', [BlogController::class, 'update'])
+        ->name('update')->middleware('auth');
 
 // route to delete blog
 Route::delete('/admin/blogs/{id}', [BlogController::class, 'destroy'])

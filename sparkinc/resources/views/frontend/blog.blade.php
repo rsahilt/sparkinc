@@ -14,6 +14,7 @@
                 <div class="blog-image"></div>
                 <div class="blog-text">
                     <h1>{{ $latestBlog->title }}</h1>
+                    <p style="color:gray" class="authordate">Posted by: {{ $latestBlog->author }} on {{ $latestBlog->created_at->format('d F, Y') }}</p>
                     <p>
                         <?php
                             $description = explode(' ', $latestBlog->description);
@@ -33,6 +34,7 @@
                 <div class="blog-image"></div>
                 <div class="blog-text">
                     <h1>{{ $anotherlatestBlog->title }}</h1>
+                    <p style="color:gray" class="authordate">Posted by: {{ $anotherlatestBlog->author }} on {{ $anotherlatestBlog->created_at->format('d F, Y') }}</p>
                     <p>
                         <?php
                             $description = explode(' ', $anotherlatestBlog->description);
@@ -74,49 +76,35 @@
     </div>
 
     <div class="all-blogs-container">
+       
+    @foreach($restoftheblogs as $restoftheblog)
         <div class="small-blog-card">
             <div class="small-blog-img"></div>
             <div class="small-blog-text">
-                <h1>This is the blog heading</h1>
-                <p>This is a short description of the blog</p>
+                <h1>{{ $restoftheblog->title }}</h1>
+                <p style="color:gray" class="authordate">Posted by: {{ $restoftheblog->author }} on {{ $restoftheblog->created_at->format('d F, Y') }}</p>
+                <p>
+                    <?php
+                        $description = explode(' ', $restoftheblog->description);
+                        $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                        echo $limitedDesc;
+                        // if summary has more than 15 words, display ... after it
+                        if (count($description) > 15) {
+                            echo '...';
+                        }
+                    ?>
+                </p>
                 <p>
                     <button class="btn btn-danger">Read Article</button>
                 </p>
             </div>
         </div>
+        @endforeach
 
-        <div class="small-blog-card">
-            <div class="small-blog-img"></div>
-            <div class="small-blog-text">
-                <h1>This is the blog heading</h1>
-                <p>This is a short description of the blog</p>
-                <p>
-                    <button class="btn btn-danger">Read Article</button>
-                </p>
-            </div>
-        </div>
+        
+        
 
-        <div class="small-blog-card">
-            <div class="small-blog-img"></div>
-            <div class="small-blog-text">
-                <h1>This is the blog heading</h1>
-                <p>This is a short description of the blog</p>
-                <p>
-                    <button class="btn btn-danger">Read Article</button>
-                </p>
-            </div>
-        </div>
-
-        <div class="small-blog-card">
-            <div class="small-blog-img"></div>
-            <div class="small-blog-text">
-                <h1>This is the blog heading</h1>
-                <p>This is a short description of the blog</p>
-                <p>
-                    <button class="btn btn-danger">Read Article</button>
-                </p>
-            </div>
-        </div>
+       
     </div>
    
 
