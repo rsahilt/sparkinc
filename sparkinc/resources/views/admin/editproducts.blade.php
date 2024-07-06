@@ -11,7 +11,7 @@
         </div>
 
         <div class="create-form">
-            <form action="{{ route('update', ['id' => $product->id]) }}" novalidate 
+            <form action="{{ route('updateproduct', ['id' => $product->id]) }}" novalidate 
             method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')

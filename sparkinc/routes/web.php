@@ -72,7 +72,7 @@ Route::get('/admin/products/{id}/edit', [ProductController::class, 'edit'])
 
 // store updated products
 Route::put('/admin/products/{id}', [ProductController::class, 'update'])
-        ->name('update')->middleware('auth');
+    ->name('updateproduct')->middleware('auth');
 
 
 //route to store products
