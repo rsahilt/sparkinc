@@ -992,6 +992,12 @@ article{
 }
 
 /* ////////////////// Blog Page //////////////////// */
+.create-form form input,
+.create-form form textarea
+{
+    padding: 20px;
+    border-radius: 3px;
+}
 
 .blog-banner{
     background: url('/public/images/blog-banner.jpg') no-repeat center center;

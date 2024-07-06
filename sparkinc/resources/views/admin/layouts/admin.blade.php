@@ -7,6 +7,8 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
@@ -64,5 +66,18 @@
         @yield('content')
 
         </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('#blogdescription, #editblogdescription, #productdescription, #editproductdescription').forEach(editorElement => {
+                    ClassicEditor
+                        .create(editorElement)
+                        .catch(error => {
+                            console.error(error);
+                        });
+                });
+            });
+        </script>
+        
 </body>
 </html>
