@@ -14,7 +14,7 @@
         @foreach($products as $product)
         <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
             <div class="prod-image">
-                <img src="{{asset('/images/about.jpg')}}" alt="product-image">
+                <img src="{{ asset('storage/images/' . $product->image) }}" alt="product-image">
             </div>
 
             <div class="prod-details">

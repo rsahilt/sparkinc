@@ -48,7 +48,7 @@
                         @foreach($products as $product)
                         <tr>
                             <th scope="row">{{ $product->id }}</th>
-                            <td><img src="{{ asset($product->image) }}" class="admin-prod-thumbnail" alt="{{ $product->name }}"></td>
+                            <td><img src="{{ asset('storage/images/' . $product->image) }}" class="admin-prod-thumbnail" alt="{{ $product->name }}"></td>
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->brand }}</td>
                             <td>{{ $product->unit_price }}</td>

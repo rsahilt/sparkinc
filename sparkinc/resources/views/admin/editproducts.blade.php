@@ -12,7 +12,7 @@
 
         <div class="create-form">
             <form action="{{ route('update', ['id' => $product->id]) }}" novalidate 
-            method="POST">
+            method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
@@ -41,7 +41,7 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label" >Image</label>                    
-                    <input type="text" class="form-control admin-form-control" id="image" name="image">
+                    <input type="file" class="form-control admin-form-control" id="image" name="image">
                     @error('image')
                         <span class="text-red-500">{{ $message }}</span>
                     @enderror

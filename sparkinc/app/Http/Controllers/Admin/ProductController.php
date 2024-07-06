@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -31,16 +33,16 @@ class ProductController extends Controller
             'brand' => 'required|string|min:1|max:255',
             'unit_price' => 'required|numeric|min:20|max:100000',
             'description' => 'string|min:10',
-            'image' => 'required|string|min:1|max:255',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg'
         ]);
         $product = Product::create($valid);
         
-        // if($file = $request->file('image')){
-        //     $filename = uniqid() . '_' . $file->getClientOriginalName();
-        //     Storage::disk('images')->put($filename,File::get($file));
-        //     $product->image=$filename;
-        //     $product->save();
-        // }
+        if($file = $request->file('image')){
+            $filename = uniqid() . '_' . $file->getClientOriginalName();
+            Storage::disk('images')->put($filename,File::get($file));
+            $product->image=$filename;
+            $product->save();
+        }
 
         if ($product) {
             return redirect()->route('storeproducts')->with('success', 'Product added successfully');
@@ -68,7 +70,7 @@ class ProductController extends Controller
         if ($product) {
             $validatedData = $request->validate([
                 'name' => 'required|string|min:1|max:255',
-                'image' => 'required|string|min:1|max:255',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
                 'unit_price' => 'required|numeric|min:20|max:100000',
                 'description' => 'string|min:10',
                 'brand' => 'required|string|min:1|max:255'
@@ -76,13 +78,13 @@ class ProductController extends Controller
             $product->update($validatedData);
 
             //Handle image uploads
-            // if($file = $request->file('image')){
+            if($file = $request->file('image')){
                 
-            //     $filename = uniqid() . '_' . $file->getClientOriginalName();
-            //     Storage::disk('images')->put($filename,File::get($file));
-            //     $product->image=$filename;
-            //     $product->save();
-            // }
+                $filename = uniqid() . '_' . $file->getClientOriginalName();
+                Storage::disk('images')->put($filename,File::get($file));
+                $product->image=$filename;
+                $product->save();
+            }
             
             return redirect()->route('admin.products')->with('success','Changes Saved');
         } else {
