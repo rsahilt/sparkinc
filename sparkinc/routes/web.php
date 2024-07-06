@@ -5,6 +5,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\BlogController;
 
 //FRONTEND ROUTES 
 
@@ -81,3 +82,14 @@ Route::post('/admin/products/', [ProductController::class, 'store'])
 // delete products from admin
 Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])
     ->name('deleteproducts')->middleware('auth');
+
+
+// blog page routes
+
+//list view of all the blogs
+Route::get('/admin/blogs', [BlogController::class, 'index'])
+        ->name('admin.blogs')->middleware('auth');
+
+// route to delete blog
+Route::delete('/admin/blogs/{id}', [BlogController::class, 'destroy'])
+        ->name('deleteblogs')->middleware('auth');
