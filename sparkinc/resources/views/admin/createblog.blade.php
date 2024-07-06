@@ -11,7 +11,7 @@
         </div>
 
         <div class="create-form">
-            <form action="{{ route('storeproducts') }}" novalidate 
+            <form action="{{ route('storeblogs') }}" novalidate 
             method="POST">
                 @csrf
                 <div class="mb-3">

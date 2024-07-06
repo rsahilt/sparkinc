@@ -32,7 +32,7 @@ class BlogController extends Controller
         $valid = $request->validate([
             'title' => 'required|string|min:1|max:255',
             'author' => 'required|string|min:1|max:255',
-            'category' => 'required|numeric|min:20|max:100000',
+            'category' => 'required|string|min:1|max:255',
             'description' => 'string|min:10',
             'image' => 'required|string|min:1|max:255',
         ]);

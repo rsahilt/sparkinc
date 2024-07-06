@@ -52,7 +52,7 @@
                             <td>{{ $blog->created_at }}</td>
                             <td class="px-6 py-4 text-left">
                                 <div class="inline-block" style="display:flex;">
-                                    <a href="{{ route('editblog', ['id' => $blog->id]) }}" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                    <a href="#" class="admin-edit-btn font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                     <!-- asking the user if they really want to delete, in the form of an alert -->
                                     <form action="{{ route('deleteblogs', $blog->id) }}" method="POST" novalidate class="inline-block">
                                         @csrf
