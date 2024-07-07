@@ -356,6 +356,19 @@ section{
     display: flex;
 }
 
+.about-descriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-descriptions p{
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
 .image-container,
 .description-container{
     width: 50%;
@@ -652,12 +665,51 @@ footer{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.abouthr{
+    margin: 0 auto;
+    width: 85%;
+    color: rgb(175, 165, 165);
+}
+
 .about-text{
     margin: 10% auto 10% auto;
-    width: 90%;
+    width: 80%;
     height: 500px;
     display: flex;
     flex-direction: row;
+}
+
+.bg-text{
+    position: absolute;
+    font-size: 10em !important;
+    font-weight: bold;
+    color: rgba(161, 154, 154, 0.3);
+}
+
+.about-aim,
+.about-vision{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-aim{
+    margin-bottom: 5%;
+}
+
+.about-vision{
+    margin-bottom: 7%;
+}
+
+.about-aim p,
+.about-vision p{
+    font-size: 1.4em;
+    text-align: justify;
+    padding: 10px;
 }
 
 .about-img{
@@ -670,7 +722,7 @@ footer{
 .about-descriptions{
     width: 60%;
     height: 100%;
-    background-color: gray;
+    position: relative;
 }
 /* Container for all doctors */
 .doctors-container {
@@ -1119,7 +1171,7 @@ article{
 
 .small-blog-card{
     width: 300px;
-    margin-right: 1%;
+    margin-right: 4%;
     display: flex;
     flex-direction: column;
 }

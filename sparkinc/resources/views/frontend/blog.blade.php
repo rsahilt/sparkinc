@@ -20,10 +20,10 @@
                     <p>
                         <?php
                             $description = explode(' ', $latestBlog->description);
-                            $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                            $limitedDesc = implode(' ', array_slice($description, 0, 10));
                             echo $limitedDesc;
-                            // if summary has more than 15 words, display ... after it
-                            if (count($description) > 15) {
+                            // if summary has more than 10 words, display ... after it
+                            if (count($description) > 10) {
                                 echo '...';
                             }
                         ?>
@@ -42,10 +42,10 @@
                     <p>
                         <?php
                             $description = explode(' ', $anotherlatestBlog->description);
-                            $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                            $limitedDesc = implode(' ', array_slice($description, 0, 10));
                             echo $limitedDesc;
-                            // if summary has more than 15 words, display ... after it
-                            if (count($description) > 15) {
+                            // if summary has more than 10 words, display ... after it
+                            if (count($description) > 10) {
                                 echo '...';
                             }
                         ?>
@@ -65,10 +65,10 @@
 
                 <p><?php
                     $description = explode(' ', $blog->description);
-                    $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                    $limitedDesc = implode(' ', array_slice($description, 0, 10));
                     echo $limitedDesc;
-                    // if summary has more than 15 words, display ... after it
-                    if (count($description) > 15) {
+                    // if summary has more than 10 words, display ... after it
+                    if (count($description) > 10) {
                         echo '...';
                     }
                 ?></p>
@@ -92,10 +92,10 @@
                 <p>
                     <?php
                         $description = explode(' ', $restoftheblog->description);
-                        $limitedDesc = implode(' ', array_slice($description, 0, 15));
+                        $limitedDesc = implode(' ', array_slice($description, 0, 7));
                         echo $limitedDesc;
-                        // if summary has more than 15 words, display ... after it
-                        if (count($description) > 15) {
+                        // if summary has more than 10 words, display ... after it
+                        if (count($description) > 10) {
                             echo '...';
                         }
                     ?>
