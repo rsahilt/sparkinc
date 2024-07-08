@@ -29,6 +29,10 @@ Route::get('/products', [FrontendController::class, 'products'])
 Route::get('/blogs', [FrontendController::class, 'blogs'])
     ->name('blogpage');
 
+// read complete blog
+Route::get('/blogs/{id}', [FrontendController::class, 'show'])
+    ->name('blog.read');
+
 
 //send message to admin
 Route::post('/send-message', [MessageController::class, 'store'])

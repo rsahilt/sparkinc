@@ -53,4 +53,12 @@ class FrontendController extends Controller
         $searchtitle = "Showing results for: $search";
         return view('frontend.product', compact('searchtitle', 'title','slug', 'products'));
     }
+
+    public function show(string $id)
+    {
+        $information = Blog::find($id);
+        $title = 'Blog';
+        $slug = "blogpageslug";
+        return view('frontend.blogsingle', compact('information', 'title','slug'));
+    }
 }

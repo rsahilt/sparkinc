@@ -1050,6 +1050,28 @@ article{
 }
 
 /* ////////////////// Blog Page //////////////////// */
+
+.single-blog-content{
+    width: 100%;
+}
+
+.singleblog-description img{
+    width: 100%;
+    max-height: 520px;
+}
+
+.single-blog{
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.singleblog-description{
+    width: 100%;
+}
+
+
 .create-form form input,
 .create-form form textarea
 {
