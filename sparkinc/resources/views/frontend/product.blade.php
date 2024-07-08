@@ -11,6 +11,12 @@
 
     <div class="products-container">
 
+        @if($products->isEmpty())
+            <h4 style="margin-top:4%">No products available</h4>
+        
+
+        @else
+
         @foreach($products as $product)
         <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
             <div class="prod-image">
@@ -27,6 +33,7 @@
             </div>
         </div>
         @endforeach
+        @endif
 
     </div>
 

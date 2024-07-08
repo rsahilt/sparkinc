@@ -50,15 +50,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ $slug === 'contactpageslug' ? 'activenavlink' : '' }}" href="/contact">CONTACT</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link {{ $slug === 'productpageslug' ? 'activenavlink' : '' }}" href="/products">PRODUCTS</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link {{ $slug === 'blogpageslug' ? 'activenavlink' : '' }}" href="/blogs">BLOGS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ $slug === 'contactpageslug' ? 'activenavlink' : '' }}" href="/contact">CONTACT</a>
                         </li>
                     </ul>
 

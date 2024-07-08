@@ -7,7 +7,10 @@
         <p>Spark Inc / {{ $title }}</p>
     </div>
 
-    
+    @if($blogs->isEmpty())
+        <h4 style="text-align:center; margin-top:4%">No Blogs Posted</h4>
+
+    @else
     <div class="blog-container blog-highlights">
         <div class="blog-thumbnails">
             <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
@@ -78,6 +81,7 @@
 
         </div>
     </div>
+    @endif
 
     <div class="all-blogs-container">
        
