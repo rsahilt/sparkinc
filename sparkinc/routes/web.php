@@ -31,7 +31,12 @@ Route::get('/blogs', [FrontendController::class, 'blogs'])
 
 
 //send message to admin
-Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
+Route::post('/send-message', [MessageController::class, 'store'])
+        ->name('send.message');
+
+//for search
+Route::post('/products/search', [FrontendController::class, 'search'])
+        ->name('products.search');
 
 
 

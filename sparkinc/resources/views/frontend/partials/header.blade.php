@@ -62,9 +62,10 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex ms-4">
+                    <form class="d-flex ms-4" action="{{ route('products.search') }}"
+                        method="POST" novalidate>
                         @csrf
-                        <input class="search-box" type="search" placeholder="Search our products" aria-label="Search">
+                        <input class="search-box search" type="search" name="search" placeholder="Search our products" aria-label="Search">
                         
                         <button class="btn btn-outline-success search-btn" type="submit">
                             <i class="fa fa-search"></i>

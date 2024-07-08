@@ -11,10 +11,13 @@
 
     <div class="products-container">
 
+        @if(isset($searchtitle))
+            <h4 class="mt-2">{{ $searchtitle }}</h4>
+        @endif
+
         @if($products->isEmpty())
             <h4 style="margin-top:4%">No products available</h4>
-        
-
+    
         @else
 
         @foreach($products as $product)

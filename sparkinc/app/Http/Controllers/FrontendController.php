@@ -43,4 +43,14 @@ class FrontendController extends Controller
         $restoftheblogs = Blog::where('id', '>=', 3)->get();
         return view('frontend.blog', compact('title', 'blogs', 'slug', 'restoftheblogs', 'latestBlog', 'anotherlatestBlog'));
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('search');
+        $title = "Products";
+        $slug = "productpageslug";
+        $products = Product::where('name', 'LIKE', "%$search%")->get();
+        $searchtitle = "Showing results for: $search";
+        return view('frontend.product', compact('searchtitle', 'title','slug', 'products'));
+    }
 }
