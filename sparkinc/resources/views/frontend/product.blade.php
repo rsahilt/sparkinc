@@ -19,23 +19,24 @@
             <h4 style="margin-top:4%">No products available</h4>
     
         @else
+            <div class="main-prod-container">
+                @foreach($products as $product)
+                <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
+                    <div class="prod-image">
+                        <img src="{{ asset('storage/images/' . $product->image) }}" alt="product-image">
+                    </div>
 
-        @foreach($products as $product)
-        <div class="prod-cards" data-aos="fade-up" data-aos-duration="800">
-            <div class="prod-image">
-                <img src="{{ asset('storage/images/' . $product->image) }}" alt="product-image">
+                    <div class="prod-details">
+                        <h1>{{ $product->name }}</h1>
+                        <span>Brand: {{ $product->brand }}</span>
+                        <p>Rs.{{ $product->unit_price }}</p>
+                        <p>
+                            <!-- <button class="btn btn-primary cart-btn">Add to Cart</button> -->
+                        </p>
+                    </div>
+                </div>
+                @endforeach
             </div>
-
-            <div class="prod-details">
-                <h1>{{ $product->name }}</h1>
-                <span>Brand: {{ $product->brand }}</span>
-                <p>Rs.{{ $product->unit_price }}</p>
-                <p>
-                    <!-- <button class="btn btn-primary cart-btn">Add to Cart</button> -->
-                </p>
-            </div>
-        </div>
-        @endforeach
         @endif
 
     </div>

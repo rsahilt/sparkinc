@@ -14,9 +14,11 @@
             <div class="blog-thumbnails">
                 @isset($latestBlog)
                     <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
-                        <div class="blog-image">
-                            <img src="{{ asset('storage/images/' . $latestBlog->image) }}" alt="product-image">
-                        </div>
+                        <a href="{{ route('blog.read', ['id' => $latestBlog->id]) }}">
+                            <div class="blog-image">
+                                <img src="{{ asset('storage/images/' . $latestBlog->image) }}" alt="product-image">
+                            </div>
+                        </a>
                         <div class="blog-text">
                             <h1>{{ $latestBlog->title }}</h1>
                             <p style="color:gray" class="authordate">Posted by: {{ $latestBlog->author }} on {{ $latestBlog->created_at->format('d F, Y') }}</p>
@@ -32,15 +34,17 @@
 
                 @isset($anotherlatestBlog)
                     <div class="blog-card" data-aos="fade-up" data-aos-direction="1500">
-                        <div class="blog-image">
-                            <img src="{{ asset('storage/images/' . $anotherlatestBlog->image) }}" alt="product-image">
-                        </div>
+                        <a href="{{ route('blog.read', ['id' => $anotherlatestBlog->id]) }}">
+                            <div class="blog-image">
+                                <img src="{{ asset('storage/images/' . $anotherlatestBlog->image) }}" alt="product-image">
+                            </div>
+                        </a>
                         <div class="blog-text">
                             <h1>{{ $anotherlatestBlog->title }}</h1>
                             <p style="color:gray" class="authordate">Posted by: {{ $anotherlatestBlog->author }} on {{ $anotherlatestBlog->created_at->format('d F, Y') }}</p>
                             <p>{!! \Illuminate\Support\Str::words($anotherlatestBlog->description, 10, '...') !!}</p>
                             <button class="btn btn-secondary">
-                                <a href="{{ route('blog.read', ['id' => $blog->id]) }}">Read Article</a>
+                                <a href="{{ route('blog.read', ['id' => $anotherlatestBlog->id]) }}">Read Article</a>
                             </button>
                         </div>
                     </div>
@@ -63,9 +67,11 @@
     <div class="all-blogs-container">
         @foreach($restoftheblogs as $restoftheblog)
             <div class="small-blog-card">
-                <div class="small-blog-img">
-                    <img src="{{ asset('storage/images/' . $restoftheblog->image) }}" alt="product-image">
-                </div>
+                <a href="{{ route('blog.read', ['id' => $blog->id]) }}">
+                    <div class="small-blog-img">
+                        <img src="{{ asset('storage/images/' . $restoftheblog->image) }}" alt="product-image">
+                    </div>
+                </a>
                 <div class="small-blog-text">
                     <h1>{{ $restoftheblog->title }}</h1>
                     <p style="color:gray" class="authordate">Posted by: {{ $restoftheblog->author }} on {{ $restoftheblog->created_at->format('d F, Y') }}</p>

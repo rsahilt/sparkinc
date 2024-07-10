@@ -949,6 +949,15 @@ body {
     background-size: cover;
 }
 
+
+.main-prod-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 article{
     margin:7% auto 1% auto;
     width: 70%;
@@ -1053,6 +1062,15 @@ article{
 
 .single-blog-content{
     width: 100%;
+}
+
+.small-blog-text h1{
+    height: 80px;
+    overflow: hidden;
+}
+
+.blog-text h1{
+    height: 100px;
 }
 
 .singleblog-description img{
