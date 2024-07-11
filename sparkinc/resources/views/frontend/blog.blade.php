@@ -86,6 +86,8 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> 
+    
+    <div class="pagination">{{ $restoftheblogs->links() }}</div>
 
 @endsection
