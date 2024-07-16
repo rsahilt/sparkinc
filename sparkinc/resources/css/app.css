@@ -1615,7 +1615,7 @@ aside{
 /* Media Queries for mobile responsiveness */
 
 /* For mobile phoness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 
     /* Header */
    .utility-contacts{
@@ -1793,6 +1793,40 @@ aside{
 
     .content{
         padding-bottom: 20px;
+    }
+
+    /* blog */
+    .blog-container,
+    .blog-highlights{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blog-thumbnails{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .blog-card{
+        width: 70%;
+        margin-bottom: 20px;
+        
+    }
+
+    .blog-lists{
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid rgb(194, 181, 181);
+        border-radius: 0;
+    }
+
+    .all-blogs-container{
+        display: none;
     }
 
 }

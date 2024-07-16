@@ -59,6 +59,7 @@
                     <p style="color:gray" class="authordate">Posted by: {{ $blog->author }} on {{ $blog->created_at->format('d F, Y') }}</p>
                     <p>{!! \Illuminate\Support\Str::words($blog->description, 10, '...') !!}</p>
                     <p><a href="{{ route('blog.read', ['id' => $blog->id]) }}">Read More &rarr;</a></p>
+                    <hr class="resp-hr">
                 @endforeach
             </div>
         </div>
