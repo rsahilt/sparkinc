@@ -29,7 +29,9 @@
 <header>
     <div class="inner-header">
         <div class="logo">
-            <img src="{{asset('images/spark.png')}}" alt="Spark Inc Logo" class="imagelogo">
+            <a href="/">
+                <img src="{{asset('images/spark.png')}}" alt="Spark Inc Logo" class="imagelogo">
+            </a>
         </div>
 
         <!-- Navigation Bar -->

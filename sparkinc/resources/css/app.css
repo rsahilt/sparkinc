@@ -1625,10 +1625,16 @@ aside{
 
    .inner-header{
         width: 100%;
+        display: flex;
+        flex-direction: row;
    }
 
    .logo{
-        width:50%;
+        width: 50%;
+   }
+
+   .navbar{
+        width: 50%;
    }
 
    .navbar-toggler{
@@ -1636,15 +1642,20 @@ aside{
         margin-right: 10px;
    }
 
+   .navbar-content{
+        height: 40px !important;
+   }
+
    .navbar-collapse{
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.99);
         position: relative;
-        top: 110px;
+        top: 80px !important;
         padding-bottom: 20px;
-        height: 110vh;
+        height: 110vh !important;
         width: 100vw;
         margin:0;
         padding: 0;
+        left: -50vw;
    }
 
    .nav-link{
