@@ -56,7 +56,8 @@
                 <button class=" btn btn-primary about-btn">More About Us</button>
             </p>
         </div>
-        <div class="image-container" data-aos="fade-left" data-aos-duration="2000">
+        <div class="image-container">
+            <!-- data-aos="fade-left" data-aos-duration="2000" -->
             <img src="{{asset('images/heartbeat.jpg')}}" alt="image" width="80%" height="80%">
         </div>
     </div>
@@ -93,7 +94,8 @@
                 <p>Testimonials</p>
                 <h1>Invaluable Feedbacks</h1>
             </div>
-            <div class="testimonial-card-container" data-aos="fade-left" data-aos-duration="2000">
+            <div class="testimonial-card-container">
+                <!-- data-aos="fade-left" data-aos-duration="2000" -->
                 <div class="card">
                     <div class="card-body testimonial-card-body">
                         <p class="card-text testimonial-text">

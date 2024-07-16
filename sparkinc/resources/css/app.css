@@ -1680,14 +1680,20 @@ aside{
    .home-about{
         flex-direction: column-reverse;
         height: auto;
+        width: 100%;
     }
 
     .image-container{
         width: 100%;
     }
 
+    .image-container img{
+        width: 100%;
+    }
+
     .description-container{
         width: 100%;
+        padding: 20px;
     }
 
     .video-container{
@@ -1700,7 +1706,6 @@ aside{
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 20px;
     }
 
     .home-blog .image-container{
@@ -1736,9 +1741,6 @@ aside{
     .lists:last-of-type{
         border: none ;
     }
-
-
-
 
 }
 
