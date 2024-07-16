@@ -1742,6 +1742,25 @@ aside{
         border: none ;
     }
 
+
+    /* About us page */
+    .banner{
+        border-radius: 0;
+        height: 300px;
+    }
+
+    .about-text{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .about-descriptions{
+        width: 100%;
+        padding: 20px;
+    }
+
 }
 
 
