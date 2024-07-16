@@ -10,6 +10,7 @@ body{
 .modal{
     background-color: rgba(0, 0, 0, 0.8) !important;
     height: 100vh !important;
+    
 }
 
 .success-msg{
@@ -1614,7 +1615,7 @@ aside{
 /* Media Queries for mobile responsiveness */
 
 /* For mobile phoness */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     /* Header */
    .utility-contacts{
@@ -1623,7 +1624,6 @@ aside{
 
    .inner-header{
         width: 100%;
-        padding: 0 20px;
    }
 
    .logo{
@@ -1632,7 +1632,7 @@ aside{
 
    .navbar-toggler{
         float: right;
-       
+        display: none;
    }
 
    .navbar-collapse{
@@ -1652,6 +1652,7 @@ aside{
         margin-bottom: 10px;
         text-align: center;
    }
+   
 
    /* Homepage */
    .homepage-content{
@@ -1735,6 +1736,7 @@ aside{
     .lists{
         width: 100%;
         padding-left: 20px;
+        margin: 0;
         border-bottom: 1px solid rgb(206, 193, 193);
     }
 
