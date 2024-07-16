@@ -119,6 +119,7 @@ header{
 .logo{
     width: 10%;
     height: 100%;
+    z-index: 10;
 }
 
 .imagelogo{
@@ -1632,7 +1633,7 @@ aside{
 
    .navbar-toggler{
         float: right;
-        display: none;
+        margin-right: 10px;
    }
 
    .navbar-collapse{
@@ -1642,6 +1643,8 @@ aside{
         padding-bottom: 20px;
         height: 110vh;
         width: 100vw;
+        margin:0;
+        padding: 0;
    }
 
    .nav-link{
@@ -1815,7 +1818,6 @@ aside{
     .blog-card{
         width: 70%;
         margin-bottom: 20px;
-        
     }
 
     .blog-lists{
@@ -1829,6 +1831,56 @@ aside{
         display: none;
     }
 
+
+    /* navbar */
+
+    .navbar,
+    .navbar-content{
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item{
+        width:100vw;
+        margin-top:10px;
+    }
+
+    .search-btn{
+        display: none;
+    }
+
+    .navbar-collapse form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-collapse form input{
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .nav-link::after,
+    .activenavlink::after {
+        top: 0;
+        height: 3px; /* Border height */
+        background: rgb(255, 255, 255); /* Border color */
+        transform: scaleX(0);
+    }
+
+    .nav-link::before,
+    .activenavlink::before {
+        top: 0;
+        height: 100%;
+        background: rgba(184, 177, 183, 0.4);
+        transform: translateY(-100%);
+    }
+
+    .nav-link:hover,
+    .nav-link.activenavlink {
+        color: #fff;
+    }
 }
 
 
