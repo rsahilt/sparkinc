@@ -1610,3 +1610,138 @@ aside{
 
 
 
+
+/* Media Queries for mobile responsiveness */
+
+/* For mobile phoness */
+@media screen and (max-width: 500px) {
+
+    /* Header */
+   .utility-contacts{
+        visibility: hidden;
+   }
+
+   .inner-header{
+        width: 100%;
+        padding: 0 20px;
+   }
+
+   .logo{
+        width:50%;
+   }
+
+   .navbar-toggler{
+        float: right;
+       
+   }
+
+   .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.8);
+        position: relative;
+        top: 110px;
+        padding-bottom: 20px;
+        height: 110vh;
+        width: 100vw;
+   }
+
+   .nav-link{
+        color: #fff;
+   }
+   
+   .nav-item{
+        margin-bottom: 10px;
+        text-align: center;
+   }
+
+   /* Homepage */
+   .homepage-content{
+        height: auto;
+        flex-direction: column-reverse;
+   }
+
+   .text-box{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+   }
+
+   .image-box{
+        display: none;
+   }
+
+   .cards-homepage{
+        height: auto;
+   }
+
+   .cards-homepage .card{
+        width: 80%;
+   }
+
+   .home-about{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .image-container{
+        width: 100%;
+    }
+
+    .description-container{
+        width: 100%;
+    }
+
+    .video-container{
+        font-size: 0.7em;
+    }
+
+
+    .home-blog{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .home-blog .image-container{
+        display: none;
+    }
+
+    .testimonials{
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-card-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .quicklinks{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .company-short{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .lists{
+        width: 100%;
+        padding-left: 20px;
+        border-bottom: 1px solid rgb(206, 193, 193);
+    }
+
+    .lists:last-of-type{
+        border: none ;
+    }
+
+
+
+
+}
+
+
+
+

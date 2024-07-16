@@ -72,7 +72,7 @@
 
 
     <div class="home-blog">
-    <div class="description-container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="description-container" data-aos="fade-up" data-aos-duration="2000">
             <p>Blog Posts</p>
             <h1>Our Latest Blog Posts</h1>
             <p>Your comprehensive guide to health and wellness, featuring expert insights, the latest medical advancements, and practical tips for living a healthier life.</p>

@@ -77,7 +77,7 @@
                     <p style="color:gray" class="authordate">Posted by: {{ $restoftheblog->author }} on {{ $restoftheblog->created_at->format('d F, Y') }}</p>
                     <p>{!! \Illuminate\Support\Str::words($restoftheblog->description, 7, '...') !!}</p>
                     <p>
-                        <a href="{{ route('blog.read', ['id' => $blog->id]) }}">
+                        <a href="{{ route('blog.read', ['id' => $restoftheblog->id]) }}">
                             <button class="btn btn-danger">
                                 Read Article
                             </button>
@@ -88,6 +88,4 @@
         @endforeach
     </div> 
     
-    <div class="pagination">{{ $restoftheblogs->links() }}</div>
-
 @endsection

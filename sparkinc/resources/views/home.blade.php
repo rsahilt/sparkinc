@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <p>
+                        <a href="/admin">Go to Admin Panel</a>
+                    </p>
                 </div>
             </div>
         </div>
