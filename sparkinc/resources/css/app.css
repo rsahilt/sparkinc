@@ -302,7 +302,8 @@ section{
     justify-content: center;
 }
 
-.cards-homepage{
+.cards-homepage,
+.testimonial-card-container{
     width: 90%;
     margin: 100px auto 0 auto;
     display: flex;
@@ -311,11 +312,10 @@ section{
 }
 
 .card{
-    width: 30%;
-    min-height: 350px;
+    width: 350px;
+    min-height: 360px;
     margin: 10px 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
 }
 
 .card-title{
@@ -1609,14 +1609,55 @@ aside{
     display: none;
 }
 
-
-
-
-
 /* Media Queries for mobile responsiveness */
 
+@media screen and (min-width:769px) and (max-width:1016px){
+    .homepage-content{
+        height: auto;
+    }
+
+    .image-box{
+        display: none;
+    }
+
+    .text-box{
+        width: 100%;
+    }
+}
+
+/* 1200px max width */
+@media screen and (min-width: 1017px) and (max-width: 1200px) {
+    .logo{
+        width: 110px;
+        height: 110px;
+    }
+
+    .imagelogo{
+        max-width: 110px;
+        height: 110px;
+        min-width: 110px;
+    }
+
+    .nav-item{
+        padding: 0 7px;
+    }
+
+    .nav-item:first-of-type{
+        padding-left: 60px;
+    }
+
+    .search-box{
+        border: 0;
+        border-bottom: 1px solid black;
+        border-radius: 0;
+        width: 200px;
+        padding: 5px;
+    }
+}
+
+
 /* For mobile phoness */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
     /* Header */
    .utility-contacts{
@@ -1688,10 +1729,6 @@ aside{
         height: auto;
    }
 
-   .cards-homepage .card{
-        width: 80%;
-   }
-
    .home-about{
         flex-direction: column-reverse;
         height: auto;
@@ -1732,10 +1769,16 @@ aside{
         height: auto;
     }
 
+
+    .testimonials-container{
+        width: 100%;
+    }
+
     .testimonial-card-container{
         display: flex;
         justify-content: center;
     }
+
 
     .quicklinks{
         width: 100%;
@@ -1893,7 +1936,4 @@ aside{
         color: #fff;
     }
 }
-
-
-
 
