@@ -19,9 +19,9 @@
         <div class="admin-nav-header">
             <ul style="list-style:none";>
                 <li>
-                    <div class="dropdown-icon">
+                    <!-- <div class="dropdown-icon">
                         <img src="{{ asset('/images/logo.png')}}" alt="">
-                    </div>
+                    </div> -->
                 </li>
             </ul>
         </div>
