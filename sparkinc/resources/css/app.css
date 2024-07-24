@@ -1946,6 +1946,19 @@ aside{
         margin: 10px 0;
         text-align: center;
     }
+
+    .admin-highlights table thead tr th:nth-of-type(2),
+    .admin-highlights table thead tr th:nth-of-type(3)
+    {
+        display: none;
+    }
+
+    .admin-highlights table tbody tr td:nth-of-type(1),
+    .admin-highlights table tbody tr td:nth-of-type(2)
+    {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 561px){
@@ -1967,11 +1980,6 @@ aside{
 
 }
 
-@media screen and (max-width:450px){
-    .admin-highlights{
-        display: none;
-    }
-}
 
 @media screen and (max-width:900px){
     .admin-header{
