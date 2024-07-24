@@ -99,11 +99,11 @@
                 <div class="card">
                     <div class="card-body testimonial-card-body">
                         <p class="card-text testimonial-text">
-                            Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                        These kits are a valuable addition to our medical toolkit, whether it's in a bedside or outpatient setting. They facilitate the assessment of UTls and proteinuria, which is pivotal in my line of work. I confidently recommend them to my fellow clinicians, and the user-friendly reporting system makes it easy for paramedics to grasp.</p>
                             <div class="client-detail">
-                                <div class="client-dp"></div>
+                                <!-- <div class="client-dp"></div> -->
                                 <div class="client-name">
-                                    <p>Firstname Lastname</p>
+                                    <p>- Dr. Mala Shrestha</p>
                                     <p>
                                         <i class="fa fa-star" ></i>
                                         <i class="fa fa-star"></i>
@@ -119,13 +119,11 @@
                 <div class="card">
                     <div class="card-body testimonial-card-body">
                         <p class="card-text testimonial-text">
-                            Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                        Thank you Spark Inc for the Neodocs, UTI Kit, incredibly convenient and simple. I was able to take the test at home, which gave me confidence and comfort. The cost-effective gear and expert report were outstanding, which I also discussed with my doctor, this experience has been amazing and really emotional. I appreciate you offering such a fantastic product.</p>
                             <div class="client-detail">
-                                <div class="client-dp">
-
-                                </div>
+                                <!-- <div class="client-dp"></div> -->
                                 <div class="client-name">
-                                    <p>Firstname Lastname</p>
+                                    <p>- Gagan Raj Dangol</p>
                                     <p>
                                         <i class="fa fa-star" ></i>
                                         <i class="fa fa-star"></i>
@@ -141,11 +139,11 @@
                 <div class="card">
                     <div class="card-body testimonial-card-body">
                         <p class="card-text testimonial-text">
-                            Our team includes highly qualified doctors dedicated to providing exceptional care. Our team includes highly qualified doctors dedicated to providing exceptional care. With their expertise and commitment, you can trust that you're in good hands.</p>
+                            Due to my parents diabetic condition, they needed to make frequent visits to the doctor, which was quite time-consuming. During this time, I came across the Neodocs Kidney test kit, which I purchased and utilized for my parents' health. Conducting the test before their doctor's appointment allowed us to identify any issues ahead of time. This not only brought comfort and ease but also managed to save some valuable</p>                        
                             <div class="client-detail">
-                                <div class="client-dp"></div>
+                                <!-- <div class="client-dp"></div> -->
                                 <div class="client-name">
-                                    <p>Firstname Lastname</p>
+                                    <p>- Shanta Shrestha</p>
                                     <p>
                                         <i class="fa fa-star" ></i>
                                         <i class="fa fa-star"></i>
