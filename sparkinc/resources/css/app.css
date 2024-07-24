@@ -1711,6 +1711,7 @@ aside{
     }
 }
 
+
 /* 1200px max width */
 @media screen and (min-width: 1017px) and (max-width: 1200px) {
     .logo{
@@ -1738,6 +1739,48 @@ aside{
         border-radius: 0;
         width: 200px;
         padding: 5px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:999px){
+    .inner-header{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .imagelogo{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .navbar-toggler{
+        position: relative;
+        left: 80%;
+    }
+
+    .navbar{
+        top:-50px;
+        background-color: orang;
+        width: auto;
+    }
+
+    .navbar-collapse{
+        width: 100%;
+        background-color: rgba(13, 12, 12, 0.9);
+        height: 100vh;
+    }
+
+    .nav-link{
+        text-align: center;
+        color: white;
     }
 }
 
