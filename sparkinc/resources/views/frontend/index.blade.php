@@ -8,7 +8,7 @@
             <h1>Listen to Your Heart:  <br> The Crucial Role of ECG Checks</h1>
             <p><sup>" </sup>Your heart beats tirelessly, and ECG checks offer a way to tune into its rhythm, ensuring it stays strong and healthy. Regular checks are a proactive step towards a healthier heart and a longer, happier life.<sup> "</sup></p>
             <p>
-                <button class="btn btn-primary learnmore">LEARN MORE</button>
+                <a href="/about"><button class="btn btn-primary learnmore">LEARN MORE</button></a>
             </p>
         </div>
 
@@ -53,7 +53,7 @@
             <p>Our commitment to cutting-edge technology and patient care is stronger than ever with the introduction of the Spandan ECG Kit. This innovative device allows us to provide faster, more accurate ECG readings, ensuring prompt diagnosis and treatment for patients.</p>
             <br>
             <p>
-                <button class=" btn btn-primary about-btn">More About Us</button>
+                <a href="/about"><button class=" btn btn-primary about-btn">More About Us</button></a>
             </p>
         </div>
         <div class="image-container">
@@ -79,7 +79,7 @@
             <p>Your comprehensive guide to health and wellness, featuring expert insights, the latest medical advancements, and practical tips for living a healthier life.</p>
             <br>
             <p>
-                <button class=" btn btn-primary about-btn">All Blog Posts</button>
+                <a href="/blogs"><button class=" btn btn-primary about-btn">All Blog Posts</button></a>
             </p>
         </div>
         <div class="image-container" data-aos="fade-left" data-aos-duration="2000">
