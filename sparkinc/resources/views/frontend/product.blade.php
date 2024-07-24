@@ -8,13 +8,13 @@
             <span class="close">&times;</span>
             <div class="prod-modal-body">
                 <div class="modal-left">
-                    <h2 id="modalProductName"></h2>
+                    <img id="modalProductImage" src="" alt="product-image">
                 </div>
                 <div class="modal-right">
-                    <img id="modalProductImage" src="" alt="product-image">
+                    <h2 id="modalProductName"></h2>
                     <p id="modalBrand"></p>
                     <p id="modalPrice"></p>
-                    <p id="modalDescription"></p>
+                    <div id="modalDescription"></div>
                 </div>
             </div>
         </div>
@@ -49,7 +49,8 @@
                         <h1>{{ $product->name }}</h1>
                         <span>Brand: {{ $product->brand }}</span>
                         <p>Rs.{{ $product->unit_price }}</p>
-                        <p style="display: none;" class="prod-description">{{ $product->description }}</p>
+                        <!-- Description is hidden initially -->
+                        <p class="prod-description" style="display: none;">{{ $product->description }}</p>
                     </div>
                 </div>
                 @endforeach
@@ -57,7 +58,5 @@
         @endif
 
     </div>
-
-
 
 @endsection
