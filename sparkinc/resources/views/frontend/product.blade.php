@@ -2,6 +2,25 @@
 
 @section('content')
 
+    <!-- product details modal -->
+    <div id="productModal" class="prod-modal">
+        <div class="prod-modal-content">
+            <span class="close">&times;</span>
+            <div class="prod-modal-body">
+                <div class="modal-left">
+                    <h2 id="modalProductName"></h2>
+                </div>
+                <div class="modal-right">
+                    <img id="modalProductImage" src="" alt="product-image">
+                    <p id="modalBrand"></p>
+                    <p id="modalPrice"></p>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ends -->
+
     <div class="banner product-banner">
         <h1>{{ $title }}</h1>
         <p>Spark Inc / {{ $title }}</p>
@@ -30,9 +49,7 @@
                         <h1>{{ $product->name }}</h1>
                         <span>Brand: {{ $product->brand }}</span>
                         <p>Rs.{{ $product->unit_price }}</p>
-                        <p>
-                            <!-- <button class="btn btn-primary cart-btn">Add to Cart</button> -->
-                        </p>
+                        <p style="display: none;" class="prod-description">{{ $product->description }}</p>
                     </div>
                 </div>
                 @endforeach
