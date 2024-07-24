@@ -1940,7 +1940,40 @@ aside{
 
 /* admin dashboard responsiveness*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:639px){
+    .admin-nav ul li{
+        padding: 8px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 561px){
+
+    .admin-prod-table table thead tr th:first-of-type,
+    .admin-prod-table table thead tr th:nth-of-type(3),
+    .admin-prod-table table thead tr th:nth-of-type(4)
+    {
+        display: none;
+    }
+
+    .admin-prod-table table tbody tr td:first-of-type,
+    .admin-prod-table table tbody tr td:nth-of-type(3),
+    .admin-prod-table table tbody tr td:nth-of-type(4)
+    {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:450px){
+    .admin-highlights{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
     .admin-header{
         display: flex;
         flex-direction: row;
@@ -1962,15 +1995,32 @@ aside{
     aside{
         width: 100%;
         height: auto;
+        position: relative;
         /* display: none; */
     }
 
+    .admin-nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .admin-nav ul li:first-of-type{
+        margin-top: 10px;
+    }
+    
+    .admin-nav ul li{
+        padding: 8px;
+        margin: 10px 0;
+    }
+
     .admin-content{
-        width: 100vh;
+        width: 100vw;
         min-height: auto;
         background-color: #ede5e5;
         margin-left: 0;
-        margin-top: 265px;
+        margin-top: 0;
     }
 
     .cards-container{
