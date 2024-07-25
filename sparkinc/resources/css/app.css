@@ -1741,6 +1741,7 @@ aside{
     .text-box{
         width: 100%;
     }
+
 }
 
 
@@ -1840,6 +1841,15 @@ aside{
 
 /* For mobile phoness */
 @media screen and (max-width: 991px) {
+    .doctors-card-container{
+        width: 95%;
+    }
+
+    .doc-cards{
+        width: 220px;
+        height: 220px;
+        margin: 15px;
+    }
 
     /* Header */
    .utility-contacts{
@@ -2008,17 +2018,6 @@ aside{
     .about-descriptions{
         width: 100%;
     }
-
-    .doctors-card-container{
-        width: 95%;
-    }
-
-    .doc-cards{
-        width: 220px;
-        height: 220px;
-        margin: 15px;
-    }
-
 
     /* contact page */
     .contact-icons{
