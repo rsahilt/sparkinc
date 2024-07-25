@@ -680,7 +680,7 @@ footer{
 }
 
 .about-text{
-    margin: 10% auto 10% auto;
+    margin: 10% auto 5% auto;
     width: 80%;
     height: 500px;
     display: flex;
@@ -2007,7 +2007,16 @@ aside{
 
     .about-descriptions{
         width: 100%;
-        padding: 20px;
+    }
+
+    .doctors-card-container{
+        width: 95%;
+    }
+
+    .doc-cards{
+        width: 220px;
+        height: 220px;
+        margin: 15px;
     }
 
 
@@ -2073,6 +2082,17 @@ aside{
 
     .all-blogs-container{
         display: none;
+    }
+
+    .about-text{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-aim,
+    .about-vision{
+        width: 100%;
+        padding: 15px;
     }
 
     /* navbar */
@@ -2162,6 +2182,12 @@ aside{
 
 @media screen and (max-width:398px){
     .admin-highlights{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 534px){
+    .bg-text{
         display: none;
     }
 }
