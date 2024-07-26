@@ -73,7 +73,7 @@ Route::get('/admin/products', [ProductController::class, 'index'])
 
 // create a new product
 Route::get('/admin/products/create', [ProductController::class, 'create'])
-    ->name('create')->middleware('auth');
+    ->name('createproduct')->middleware('auth');
 
 //edit products form
 Route::get('/admin/products/{id}/edit', [ProductController::class, 'edit'])
